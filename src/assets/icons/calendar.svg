@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" fill="none" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#000">
+  <g stroke-linecap="round" stroke-linejoin="round">
+   <path d="m2.25 3c-1.2338 0-2.25 1.0162-2.25 2.25v16.5c0 1.2337 1.0162 2.25 2.25 2.25h19.5c1.2338 0 2.25-1.0162 2.25-2.25v-16.5c0-1.2338-1.0163-2.25-2.25-2.25zm0 1.5h19.5c0.42306 0 0.75 0.32692 0.75 0.75v16.5c0 0.42304-0.32696 0.75-0.75 0.75h-19.5c-0.42308 0-0.75-0.32694-0.75-0.75v-16.5c0-0.4231 0.3269-0.75 0.75-0.75z" clip-rule="evenodd" color="#000000" fill-rule="evenodd" style="-inkscape-stroke:none"/>
+   <path d="m0.75 9a0.75 0.75 0 0 0-0.75 0.75 0.75 0.75 0 0 0 0.75 0.75h22.5a0.75 0.75 0 0 0 0.75-0.75 0.75 0.75 0 0 0-0.75-0.75z" color="#000000" style="-inkscape-stroke:none"/>
+   <path d="M 6.75,0 A 0.75,0.75 0 0 0 6,0.75 V 6 A 0.75,0.75 0 0 0 6.75,6.75 0.75,0.75 0 0 0 7.5,6 V 0.75 A 0.75,0.75 0 0 0 6.75,0 Z" color="#000000" style="-inkscape-stroke:none"/>
+   <path d="m17.25 0a0.75 0.75 0 0 0-0.75 0.75v5.25a0.75 0.75 0 0 0 0.75 0.75 0.75 0.75 0 0 0 0.75-0.75v-5.25a0.75 0.75 0 0 0-0.75-0.75z" color="#000000" style="-inkscape-stroke:none"/>
+  </g>
+  <g fill-rule="evenodd" stroke-width="1.2609">
+   <circle cx="5.6258" cy="13.873" r="1.1244"/>
+   <circle cx="11.983" cy="13.873" r="1.1244"/>
+   <circle cx="18.374" cy="13.873" r="1.1244"/>
+   <circle cx="5.6258" cy="19.123" r="1.1244"/>
+   <circle cx="11.983" cy="19.123" r="1.1244"/>
+   <circle cx="18.374" cy="19.123" r="1.1244"/>
+  </g>
+ </g>
+</svg>

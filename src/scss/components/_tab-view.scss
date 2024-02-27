@@ -1,0 +1,41 @@
+$tab-view-height: rem(32px) !default;
+$tab-view-padding-x: rem(16px) !default;
+$tab-view-color: $gray-950 !default;
+$tab-view-font-size: $size-small !default;
+$tab-view-bg-color: $gray-0 !default;
+$tab-view-content-padding: rem(16px) 0 !default;
+
+$tab-view-hover: (
+  'color': $gray-0,
+  'background': $gray-950,
+) !default;
+
+.p-tabview {
+  .p-tabview-nav {
+    .p-tabview-nav-link {
+      height: $tab-view-height;
+      padding: 0 $tab-view-padding-x;
+      color: $tab-view-color;
+      font-size: $tab-view-font-size;
+      font-weight: $weight-normal;
+      background: $tab-view-bg-color;
+
+      .p-tabview-title {
+        line-height: $line-height-base;
+        white-space: nowrap;
+      }
+    }
+
+    li {
+      &.p-highlight {
+        .p-tabview-nav-link {
+          @include set-props($tab-view-hover);
+        }
+      }
+    }
+  }
+
+  .p-tabview-panels {
+    padding: $tab-view-content-padding;
+  }
+}

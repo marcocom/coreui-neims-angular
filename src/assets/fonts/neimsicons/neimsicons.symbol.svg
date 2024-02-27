@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="display:none;"><symbol viewBox="0 0 30 39" id="ne-add-marker">
+<path d="M20.5104 21.5012L11.0109 38.0024L1.47313 21.5012C-2.72347 14.1673 2.54136 5 11.0109 5C19.4422 5 24.7452 14.1673 20.5104 21.5012Z" fill="#13100D"></path>
+<path d="M11.0119 21.3844C14.4885 21.3844 17.3068 18.5627 17.3068 15.0818C17.3068 11.601 14.4885 8.7793 11.0119 8.7793C7.53533 8.7793 4.71701 11.601 4.71701 15.0818C4.71701 18.5627 7.53533 21.3844 11.0119 21.3844Z" fill="#13100D"></path>
+<path d="M29.5 9C29.5 13.6944 25.6944 17.5 21 17.5C16.3056 17.5 12.5 13.6944 12.5 9C12.5 4.30558 16.3056 0.5 21 0.5C25.6944 0.5 29.5 4.30558 29.5 9Z" fill="#D4D4D4" stroke="#F9F7F2"></path>
+<path d="M25.959 9.54942H21.5509V13.9576H20.0815V9.54942H15.6733V8.08004H20.0815V3.67188H21.5509V8.08004H25.959V9.54942Z" fill="#13100D"></path>
+</symbol><symbol viewBox="0 0 10 5" id="ne-arrow-bullet">
+<path d="M5 0L9.33013 4.5H0.669873L5 0Z" fill="#D4D4D4"></path>
+</symbol><symbol viewBox="0 0 36 44" id="ne-broken-page">
+<path d="M21.726 2H2V42H34V14.2306M21.726 2V14.2306H34M21.726 2L34 14.2306" stroke="black" stroke-width="3" stroke-linejoin="round"></path>
+
+<svg width="25" height="80" viewBox="-8 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25 9.98941L9.75 2.25745" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M9.75 9.98941L2.25 2.25745" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<symbol id="ne-calendar"></symbol></svg>
+
+</symbol><symbol id="ne-calendar"></symbol></svg><svg width="25" height="80" viewBox="-8 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25 9.98941L9.75 2.25745" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M9.75 9.98941L2.25 2.25745" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+<symbol id="ne-calendar"></symbol></svg>

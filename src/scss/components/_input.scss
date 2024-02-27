@@ -1,0 +1,164 @@
+$side-spacer: rem(16px) !default;
+$top-spacer: rem(14px) !default;
+$separator: rem(4px) !default;
+
+$border-regular: $gray-950 !default;
+$border-active: $gold !default;
+$border-invalid: $red !default;
+
+$background-color: $gray-0 !default;
+$font-color: $gray-1000 !default;
+$placeholder-color: $gray-500 !default;
+
+
+$label-weight: $weight-bold !default;
+$label-size: $size-xsmall !default;
+
+$checkbox-size: rem(16px) !default;
+
+$radio-size: rem(16px) !default;
+$radio-size-xsmall: rem(8px) !default;
+
+$basic-input: (
+  'width': 100%,
+  'margin': $separator 0,
+  'padding': $top-spacer $side-spacer,
+  'font-size': $size-small,
+  'border': 1px solid $border-regular,
+  'border-radius': $border-radius-normal
+  ) !default;
+
+$basic-checkbox: (
+  'width': $checkbox-size,
+  'height': $checkbox-size,
+  'border': 1px solid $placeholder-color,
+  'background': $background-color,
+  'border-radius': rem(2px)
+) !default;
+
+$basic-radio: (
+  'width': $radio-size,
+  'height': $radio-size,
+  'border': 1px solid $border-regular,
+  'border-radius': 50%,
+  'background': $background-color,
+) !default;
+
+.aqm-input {
+  @include set-props($basic-input);
+
+  &.invalid {
+    border-color: $border-invalid;
+  }
+}
+
+.aqm-textarea {
+  @include set-props($basic-input);
+
+  resize: none;
+
+  &.invalid {
+    border-color: $border-invalid;
+  }
+}
+
+.aqm-remain-textarea {
+  @include set-props($basic-input);
+
+  position: relative;
+  background: $background-color;
+
+  textarea {
+    width: 100%;
+    border: none;
+    resize: none;
+  }
+
+  .counter {
+    display: block;
+    margin-top: $separator;
+    font-size: $size-xxsmall;
+    color: $placeholder-color;
+    text-align: end;
+  }
+
+  &.invalid {
+    border-color: $border-invalid;
+  }
+}
+
+.aqm-input,
+.aqm-textarea,
+.aqm-remain-textarea {
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $border-active;
+  }
+}
+
+.label {
+  display: block;
+  font-weight: $label-weight;
+  font-size: $label-size;
+
+  &-required {
+    &::after {
+      content: '*';
+    }
+  }
+}
+
+.aqm-checkbox-regular {
+  .p-hidden-accessible {
+    position: relative;
+  }
+
+  .p-checkbox-box {
+    @include set-props($basic-checkbox);
+
+    &.p-highlight {
+      background: $font-color;
+      color: $background-color;
+      font-size: $size-xxsmall;
+      border: none;
+    }
+
+    .p-checkbox-icon {
+      font-weight: $weight-bold !important;
+    }
+  }
+
+  & + .p-checkbox-label {
+    font-size: $size-small;
+    margin-left: rem(8px);
+  }
+}
+
+.aqm-radio-regular {
+  .p-hidden-accessible {
+    position: relative;
+  }
+
+  .p-radiobutton-box {
+    @include set-props($basic-radio);
+
+    &.p-highlight {
+      .p-radiobutton-icon {
+        width: $radio-size-xsmall;
+        height: $radio-size-xsmall;
+        background: $border-regular;
+      }
+    }
+  }
+
+  & + .p-radiobutton-label {
+    font-size: $size-small;
+    margin-left: rem(8px);
+  }
+}
+
+.aqm-invalid-text {
+  color: $border-invalid;
+  font-size: $size-xsmall;
+}

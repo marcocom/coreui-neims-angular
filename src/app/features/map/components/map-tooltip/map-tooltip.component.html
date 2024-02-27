@@ -1,0 +1,50 @@
+<div class="tooltip-container" *ngIf="locationData$ | async as locationData">
+  <img
+    class="image"
+    [src]="locationData.image || '/assets/images/tooltip-default.png'"
+    [alt]="locationData.name"
+  />
+
+  <div class="content">
+    <h3 class="mt-0">{{ locationData.name }}</h3>
+
+    <ng-container *ngIf="locationData.metrics">
+      <p class="label">
+        {{ locationData.filters | dateRangeLabel }}
+      </p>
+
+      <ng-container *ngIf="metricKeyMap$ | async as metricKeyMap">
+        <aqm-tab-view-scroller>
+          <p-tabView>
+            <ng-container
+              *ngFor="let metric of locationData.metrics.metrics | keyvalue"
+            >
+              <p-tabPanel
+                *ngIf="metricKeyMap[metric.key] as capability"
+                [header]="capability.visibleName"
+              >
+                <p class="label" i18n="Metric average value tooltip text">
+                  Average value over period
+                </p>
+
+                <p class="value">
+                  {{ metric.value | number }}
+                  <span class="unit">{{ capability.metricUnit }}</span>
+                </p>
+              </p-tabPanel>
+            </ng-container>
+          </p-tabView>
+        </aqm-tab-view-scroller>
+      </ng-container>
+
+      <button
+        pButton
+        pRipple
+        label="See more"
+        i18n-label="See more tooltip action label"
+        class="p-button-secondary p-button-sm"
+        (click)="seeMore(locationData.uuid, $event)"
+      ></button>
+    </ng-container>
+  </div>
+</div>

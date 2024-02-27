@@ -1,0 +1,10 @@
+$display: (
+  'hidden': 'none',
+  'block': 'block',
+  'inline': 'inline',
+  'inline-block': 'inline-block',
+  'flex': 'flex',
+  'inline-flex': 'inline-flex',
+);
+
+@include style-class('d-', 'display', $display, $responsive);

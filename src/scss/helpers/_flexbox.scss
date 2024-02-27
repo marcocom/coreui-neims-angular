@@ -1,0 +1,67 @@
+$flex-direction: (
+  'flex-row': row,
+  'flex-row-reverse': row-reverse,
+  'flex-column': column,
+  'flex-column-reverse': column-reverse,
+);
+
+$flex-wrap: (
+  'flex-nowrap': nowrap,
+  'flex-wrap': wrap,
+  'flex-wrap-reverse': wrap-reverse,
+);
+
+$align-items: (
+  'align-items-stretch': 'stretch',
+  'align-items-start': 'flex-start',
+  'align-items-center': 'center',
+  'align-items-end': 'flex-end',
+  'align-items-baseline': 'baseline',
+);
+
+$justify-content: (
+  'justify-content-start': 'flex-start',
+  'justify-content-end': 'flex-end',
+  'justify-content-center': 'center',
+  'justify-content-between': 'space-between',
+  'justify-content-around': 'space-around',
+  'justify-content-evenly': 'space-evenly',
+);
+
+$align-content: (
+  'align-content-stretch': 'stretch',
+  'align-content-start': 'flex-start',
+  'align-content-center': 'center',
+  'align-content-end': 'flex-end',
+  'align-content-between': 'space-between',
+  'align-content-around': 'space-around',
+  'align-content-evenly': 'space-evenly',
+);
+
+$align-self: (
+  'align-self-auto': 'auto',
+  'align-self-start': 'flex-start',
+  'align-self-center': 'center',
+  'align-self-end': 'flex-end',
+  'align-self-stretch': 'stretch',
+  'align-self-baseline': 'baseline',
+);
+
+$flex-grow: (
+  'flex-grow-0': 0,
+  'flex-grow-1': 1,
+);
+
+$flex-shrink: (
+  'flex-shrink-0': 0,
+  'flex-shrink-1': 1,
+);
+
+@include style-class('', 'flex-direction', $flex-direction, $responsive);
+@include style-class('', 'flex-wrap', $flex-wrap, $responsive);
+@include style-class('', 'align-items', $align-items, $responsive);
+@include style-class('', 'justify-content', $justify-content, $responsive);
+@include style-class('', 'align-content', $align-content, $responsive);
+@include style-class('', 'align-self', $align-self, $responsive);
+@include style-class('', 'flex-grow', $flex-grow, $responsive);
+@include style-class('', 'flex-shrink', $flex-shrink, $responsive);

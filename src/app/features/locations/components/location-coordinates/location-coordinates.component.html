@@ -1,0 +1,48 @@
+<ng-container *ngIf="type === 'add'; else editCaption">
+  <h2 class="mt-2 mb-3" i18n="add-location-coordinates|Page title">
+    Identify the new location
+  </h2>
+
+  <p i18n="add-location-coordinates|Page sub-title">
+    Use the menu on the right in order to interact with the map and to identify
+    the new location. Interact with the pin in order to adjust the location
+    coordinates.
+  </p>
+</ng-container>
+
+<ng-template #editCaption>
+  <h2 class="mt-2 mb-3" i18n="edit-location-coordinates|Page title">
+    Edit location
+  </h2>
+
+  <p i18n="edit-location-coordinates|Page sub-title">
+    Edit the information below in order to update the location’s information.
+  </p>
+</ng-template>
+
+<div class="separator mt-5"></div>
+
+<ng-container *ngIf="coordinates?.longitude">
+  <h4 i18n="add-location-coordinates|Longitude coordinates section label">
+    Location coordinates
+  </h4>
+
+  <dl class="d-flex mt-4">
+    <div class="geo-item">
+      <dt
+        i18n="add-location-coordinates|Longitude label on coordinates sidebar"
+      >
+        Longitude
+      </dt>
+      <dd class="mt-1">{{ coordinates.longitude | number: '2.8' }}</dd>
+    </div>
+
+    <div class="geo-item">
+      <dt i18n="add-location-coordinates|Latitude label on coordinates sidebar">
+        Latitude
+      </dt>
+
+      <dd class="mt-1">{{ coordinates.latitude | number: '2.8' }}</dd>
+    </div>
+  </dl>
+</ng-container>

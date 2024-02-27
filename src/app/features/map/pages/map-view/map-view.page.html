@@ -1,0 +1,35 @@
+<aqm-sidebar>
+  <aqm-map-filters
+    [locations]="locations$ | async"
+    [capabilities]="capabilities$ | async"
+    [loading]="loading$ | async"
+    [lastUpdate]="lastUpdate$ | async"
+    [defaultDateRange]="defaultDateRange$ | async"
+    [defaultFilters]="defaultFilters$ | async"
+    (applyFilters)="onApplyFilters($event)"
+    (resetFilters)="onResetFilters()"
+  ></aqm-map-filters>
+</aqm-sidebar>
+
+<aqm-container>
+  <aqm-map [options]="options" [legend]="legend"></aqm-map>
+</aqm-container>
+
+<ng-template #legend>
+  <div class="score-legend">
+    <div class="score-legend-item">
+      <i
+        class="score-legend-indicator"
+        [style.backgroundColor]="NO_DATA_COLOR"
+      ></i>
+      <span i18n="score-legend|No data label">No data</span>
+    </div>
+    <div class="score-legend-item" *ngFor="let score of scores">
+      <i
+        class="score-legend-indicator"
+        [style.backgroundColor]="score.color"
+      ></i>
+      <span>{{ score.label }}</span>
+    </div>
+  </div>
+</ng-template>

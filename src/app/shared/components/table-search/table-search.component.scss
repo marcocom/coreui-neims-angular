@@ -1,0 +1,34 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$search-width: rem(286px) !default;
+$search-height: rem(40px) !default;
+$search-background: $gray-0 !default;
+
+$search-spacer-lg: rem(16px) !default;
+$search-spacer-md: rem(12px) !default;
+
+$search-border: 1px solid $gray-950 !default;
+$search-border-radius: $border-radius-normal !default;
+
+.search {
+  position: relative;
+  min-width: $search-width;
+  padding: $search-spacer-md rem(32px) $search-spacer-md $search-spacer-lg ;
+  border: $search-border;
+  border-radius: $search-border-radius;
+  background: $search-background;
+
+  &-icon {
+    position: absolute;
+    top: $search-spacer-lg;
+    right: $search-spacer-lg;
+    font-size: $size-xsmall;
+    cursor: pointer;
+  }
+
+  &-input {
+    height: $search-height;
+    border: none;
+  }
+}

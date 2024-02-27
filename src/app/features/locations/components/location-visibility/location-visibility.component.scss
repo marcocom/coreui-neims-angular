@@ -1,0 +1,16 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+.visibility {
+  padding: rem(4px);
+  font-size: $size-xsmall;
+  border-radius: $border-radius-small;
+
+  &-published {
+    background: $gold-25;
+  }
+
+  &-unpublished {
+    background: $gray-300;
+  }
+}

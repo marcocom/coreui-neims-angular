@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'neimsicons';
+  src: url('neimsicons.eot?t=1708985006824');
+  src: url('neimsicons.eot?t=1708985006824#iefix') format('embedded-opentype'),
+  url('neimsicons.ttf?t=1708985006824') format('truetype'),
+  url('neimsicons.woff2?t=1708985006824') format('woff2'),
+  url('neimsicons.woff?t=1708985006824') format('woff'),
+  url('neimsicons.svg?t=1708985006824#neimsicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ne {
+  font-family: 'neimsicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ne-add-marker:before { content: "\ea01"; }
+.ne-arrow-bullet:before { content: "\ea02"; }
+.ne-broken-page:before { content: "\ea03"; }
+.ne-calendar:before { content: "\ea04"; }
+

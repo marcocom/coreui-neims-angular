@@ -1,0 +1,12 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+.sidebar {
+  position: absolute;
+  top: $header-height;
+  bottom: 0;
+  width: $sidebar-width;
+  overflow: hidden;
+  box-shadow: $box-shadow-1;
+  z-index: 1;
+}

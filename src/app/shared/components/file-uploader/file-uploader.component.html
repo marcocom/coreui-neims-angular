@@ -1,0 +1,36 @@
+<input
+  #selectFile
+  type="file"
+  class="d-hidden"
+  [accept]="accept"
+  (change)="onFileSelected(selectFile)"
+/>
+
+<div>
+  <button
+    pButton
+    pRipple
+    type="button"
+    class="p-button-secondary p-button-sm"
+    [label]="uploadLabel"
+    [disabled]="!canUpload"
+    (click)="selectFile.click()"
+  ></button>
+
+  <div class="files">
+    <div class="file" *ngFor="let file of files; trackBy: trackByFunc">
+      <span class="ellipsis" [title]="file.name">{{ file[fileNameKey] }}</span>
+      <button type="button" class="file-button" (click)="removeFile(file)">
+        <span class="pi pi-times"></span>
+      </button>
+    </div>
+
+    <div class="file" *ngIf="uploading">
+      <span class="upload-progress" [style.width.%]="progress"></span>
+      <span class="ellipsis" [title]="fileName">{{ fileName }}</span>
+      <button type="button" class="file-button" (click)="cancel()">
+        <span class="pi pi-times"></span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "/stations": {
+    "target": "https://stations.redacted.introduct.org/api/v1/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/stations": ""
+    }
+  },
+  "/data": {
+    "target": "https://data.redacted.introduct.org/api/v1/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/data": ""
+    }
+  }
+}

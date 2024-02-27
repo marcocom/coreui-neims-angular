@@ -1,0 +1,103 @@
+<aqm-stepper
+  [stepIndex]="currentStep"
+  (setStepperProperties)="onSetCurrentStep($event)"
+>
+  <cdk-step>
+    <div class="wrapper">
+      <aqm-location-data-form
+        type="edit"
+        [uploadUrl]="UPLOAD_URL"
+        [location]="location"
+        (storeLocationData)="onStoreLocationData($event)"
+        (proceedToConfirmation)="onConfirmationProceed($event)"
+        (setEditableLocation)="onEditLocationSet()"
+      ></aqm-location-data-form>
+
+      <div class="action-row">
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for back button"
+          label="Back"
+          class="p-button-secondary p-button-lg"
+          (click)="onBackNavigate()"
+        ></button>
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for save button"
+          label="Save"
+          class="p-button-lg ml-4"
+          [disabled]="!alowFormSubmit"
+          (click)="onConfirmNavigate()"
+        ></button>
+      </div>
+    </div>
+  </cdk-step>
+  <cdk-step>
+    <div class="wrapper">
+      <aqm-location-coordinates
+        type="edit"
+        [coordinates]="location"
+        (setInitialCoordinates)="onInitialCoordinatesSet($event)"
+      ></aqm-location-coordinates>
+
+      <div class="spacer"></div>
+
+      <div class="action-row">
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for back button"
+          label="Back"
+          class="p-button-secondary p-button-lg"
+          cdkStepperPrevious
+          (click)="resetCoordinates()"
+        ></button>
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for save button"
+          label="Save"
+          class="p-button-lg ml-4"
+          cdkStepperPrevious
+        ></button>
+      </div>
+    </div>
+  </cdk-step>
+  <cdk-step>
+    <div class="wrapper">
+      <aqm-location-confirm
+        type="edit"
+        [location]="location"
+      ></aqm-location-confirm>
+
+      <div class="spacer"></div>
+
+      <div class="action-row">
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for back button"
+          label="Back"
+          class="p-button-secondary p-button-lg"
+          (click)="onFormNavigate()"
+        ></button>
+        <button
+          pButton
+          pRipple
+          type="button"
+          i18n-label="add-location|Label for save button"
+          label="Save"
+          class="p-button-lg ml-4"
+          (click)="onEditLocation()"
+        ></button>
+      </div>
+    </div>
+  </cdk-step>
+</aqm-stepper>

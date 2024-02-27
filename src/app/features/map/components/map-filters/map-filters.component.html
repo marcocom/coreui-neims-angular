@@ -1,0 +1,134 @@
+<div>
+  <h1 class="text-2xl mb-4" i18n="sidebar | Page title">Air Quality</h1>
+
+  <p i18n="System description">
+    A system, that allows monitoring air quality data, in order to generate
+    knowledge and predictive understanding, necessary to sustain and preserve
+    Redacted.
+  </p>
+
+  <div class="separator"></div>
+
+  <h4 i18n="Filtering form title">Data filters</h4>
+
+  <form [formGroup]="mapFiltersForm" (ngSubmit)="onApplyFilters()">
+    <div class="mt-4">
+      <span
+        class="d-inline-block text-xs font-bold mb-1"
+        i18n="Label for select locations control"
+      >
+        Locations
+      </span>
+      <p-multiSelect
+        aqmMultiselect
+        formControlName="locations"
+        [options]="locations"
+        [showHeader]="false"
+        placeholder="Select monitoring stations"
+        i18n-placeholder="Placeholder for select monitoring stations control"
+        optionLabel="name"
+        dataKey="uuid"
+        display="chip"
+        appendTo="body"
+        scrollHeight="290px"
+      >
+        <ng-template pTemplate="item" let-location>
+          <span class="ellipsis">{{ location.name }}</span>
+        </ng-template>
+      </p-multiSelect>
+    </div>
+
+    <div class="mt-4">
+      <span
+        class="d-inline-block text-xs font-bold mb-1"
+        i18n="Label for select indicators control"
+      >
+        Indicators
+      </span>
+      <p-multiSelect
+        aqmMultiselect
+        formControlName="capabilities"
+        [options]="capabilities"
+        [showHeader]="false"
+        placeholder="Select indicators"
+        i18n-placeholder="Placeholder for select indicators control"
+        optionLabel="visibleName"
+        dataKey="name"
+        display="chip"
+        appendTo="body"
+        scrollHeight="290px"
+      >
+        <ng-template pTemplate="item" let-capability>
+          <span class="ellipsis">{{ capability.visibleName }}</span>
+        </ng-template>
+      </p-multiSelect>
+    </div>
+
+    <div class="mt-4">
+      <span
+        class="d-inline-block text-xs font-bold mb-1"
+        i18n="Label for select date range control"
+      >
+        Date range
+      </span>
+      <p-calendar
+        #calendar
+        formControlName="dateRange"
+        selectionMode="range"
+        [placeholder]="dateRangePlaceholder"
+        icon="ne ne-calendar"
+        [firstDayOfWeek]="1"
+        [dateFormat]="dateFormat"
+        [showIcon]="true"
+        [readonlyInput]="true"
+        [maxDate]="maxDate"
+        [minDate]="minDate"
+        [class.invalid]="dateRangeControl.invalid && !calendarOpened"
+        (onSelect)="onDateRangeSelected(calendar)"
+        (onShow)="calendarOpened = true"
+        (onClose)="calendarOpened = false"
+      ></p-calendar>
+      <div
+        *ngIf="dateRangeControl.invalid && !calendarOpened"
+        class="text-xs color-error py-1"
+      >
+        <span i18n="Date range selection error message">
+          Both start and end date are required
+        </span>
+      </div>
+    </div>
+
+    <div class="my-5">
+      <button
+        pButton
+        pRipple
+        type="button"
+        i18n-label="Label for reset filters button"
+        label="Reset filters"
+        class="p-button-secondary p-button-lg mr-3"
+        [disabled]="!canReset"
+        (click)="onResetFilters()"
+      ></button>
+      <button
+        pButton
+        pRipple
+        type="submit"
+        class="p-button-lg"
+        [disabled]="!canApply"
+        i18n-label="Label for apply filters button"
+        label="Apply filters"
+      ></button>
+    </div>
+  </form>
+</div>
+
+<div class="spacer"></div>
+
+<div>
+  <p class="font-bold" *ngIf="defaultDateRange" i18n="Default date range label">
+    Data from the last 30 days
+  </p>
+  <p *ngIf="lastUpdate" class="text-sm gray-500 mb-0">
+    Last update: {{ lastUpdate | date: dateTimeFormat }}
+  </p>
+</div>

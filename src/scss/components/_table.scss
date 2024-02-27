@@ -1,0 +1,141 @@
+$table-radius: $border-radius-normal !default;
+$table-icon-size: rem(6px);
+
+$table-background: $gray-0 !default;
+
+$table-cell-padding: rem(18px) !default;
+
+$table-checkbox-size: rem(16px) !default;
+$table-checkbox-border: 1px solid $gray-400 !default;
+$table-checkbox-radius: rem(2px) !default;
+$table-checkbox-background: $gray-1000 !default;
+$table-checkbox-color: $gray-0 !default;
+$table-checkbox-font-size: $size-xxxsmall !default;
+
+// Table caption
+.p-datatable-header {
+  margin: rem(24px) 0 rem(16px);
+}
+
+.p-datatable-wrapper {
+  table {
+    table-layout: auto !important;
+
+    tr {
+      border-bottom: 1px solid $gray-300;
+      vertical-align: top;
+    }
+
+    td {
+      max-width: rem(480px);
+      padding: $table-cell-padding;
+    }
+  }
+}
+
+.p-datatable-table {
+  font-size: $size-small;
+
+  .p-checkbox {
+    .p-checkbox-box {
+      border: $table-checkbox-border;
+      background: $table-background;
+      width: $table-checkbox-size;
+      height: $table-checkbox-size;
+      border-radius: $table-checkbox-radius;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+      &.p-highlight {
+        border-color: $table-checkbox-background;
+        background: $table-checkbox-background;
+        color: $table-checkbox-color;
+        font-size: $table-checkbox-font-size;
+
+        .p-checkbox-icon.pi-check {
+          font-weight: $weight-bold;
+        }
+      }
+    }
+  }
+
+  // Table header
+  .p-datatable-thead {
+    th {
+      padding: $table-cell-padding;
+      background: $table-background;
+      text-align: start;
+
+      &:first-child {
+        border-top-left-radius: $table-radius;
+      }
+
+      &:last-child {
+        border-top-right-radius: $table-radius;
+      }
+    }
+
+    .sort {
+      display: flex;
+      flex-direction: column;
+      margin-left: rem(4px);
+
+      i {
+        color: $gray-300;
+        font-size: $table-icon-size;
+
+        &.marker-down {
+          transform: rotate(180deg);
+          margin-top: rem(3px);
+        }
+
+        &.active {
+          color: $gray-950;
+        }
+      }
+    }
+  }
+
+  // Table body
+  .p-datatable-tbody {
+    .p-selectable-row {
+      &.p-highlight,
+      &:hover {
+        background: $table-background !important;
+      }
+    }
+  }
+}
+
+// Pagination controller
+.p-paginator-bottom.p-paginator {
+  margin-top: rem(24px);
+  justify-content: flex-end;
+
+  .p-paginator-last,
+  .p-paginator-first {
+    display: none;
+  }
+
+  .p-paginator-page.p-paginator-element.p-link,
+  .p-paginator-next,
+  .p-paginator-prev {
+    padding: 0 rem(4px);
+  }
+
+  .p-paginator-next,
+  .p-paginator-prev {
+    margin-bottom: rem(2px);
+  }
+
+  .p-paginator-page {
+    color: $gray-500;
+  }
+
+  .p-highlight {
+    font-weight: $weight-bold;
+    border-bottom: 2px solid $gold;
+    color: $gray-950;
+  }
+}
+
+

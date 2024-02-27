@@ -1,0 +1,17 @@
+<span class="search">
+  <i
+    *ngIf="!searchString.length; else activeRow"
+    class="pi pi-search search-icon"
+  ></i>
+  <ng-template #activeRow>
+    <i class="pi pi-times search-icon" (click)="onClear()"></i>
+  </ng-template>
+
+  <input
+    class="search-input"
+    type="text"
+    (input)="processInput()"
+    [(ngModel)]="searchString"
+    [placeholder]="placeholder"
+  />
+</span>

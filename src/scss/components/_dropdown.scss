@@ -1,0 +1,108 @@
+$dropdown-height: rem(40px) !default;
+$dropdown-bg-color: $gray-0 !default;
+$dropdown-border-color: $gray-950 !default;
+$dropdown-font-size: $size-small !default;
+$dropdown-padding-x: rem(8px) !default;
+
+$dropdown-opened: (
+  'border-color': $gold,
+) !default;
+
+$dropdown-panel-margin: rem(4px) !default;
+$dropdown-panel-border-color: $gray-500 !default;
+
+$dropdown-item-padding: rem(16px) !default;
+
+$dropdown-item-hover: (
+  'background': $cream,
+) !default;
+
+.p-dropdown {
+  height: $dropdown-height;
+  align-items: center;
+  padding: 0 $dropdown-padding-x;
+  font-size: $dropdown-font-size;
+  line-height: 1.5;
+  background: $dropdown-bg-color;
+  border: 1px solid $dropdown-border-color;
+  border-radius: $border-radius-normal;
+
+  .p-dropdown-trigger-icon {
+    transition: transform 0.2s;
+  }
+
+  &.p-dropdown-open {
+    @include set-props($dropdown-opened);
+
+    .p-dropdown-trigger-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .p-dropdown-label {
+    margin-right: $dropdown-padding-x;
+
+    &.p-placeholder {
+      color: $placeholder-color;
+    }
+  }
+}
+
+.p-dropdown-panel {
+  padding: $dropdown-panel-margin 0;
+
+  .p-dropdown-items-wrapper {
+    background: $dropdown-bg-color;
+    border: 1px solid $dropdown-panel-border-color;
+    border-radius: $border-radius-normal;
+
+    .p-dropdown-item {
+      padding: $dropdown-item-padding;
+      font-size: $dropdown-font-size;
+      transition: background-color 0.2s;
+
+      &:hover {
+        @include set-props($dropdown-item-hover);
+      }
+    }
+  }
+}
+
+// TODO: align these styles with the design later
+.switcher-dropdown.p-dropdown {
+  height: rem(36px);
+  padding: 0;
+  font-size: $size-xsmall;
+  font-weight: $weight-bold;
+  border: 1px solid $gray-300;
+  border-radius: rem(6px);
+
+  .p-dropdown-label {
+    padding-left: rem(16px);
+    padding-right: rem(8px);
+    margin-right: 0;
+  }
+
+  .p-dropdown-trigger {
+    width: rem(32px);
+
+    .p-dropdown-trigger-icon {
+      font-size: $size-xxsmall;
+    }
+  }
+}
+
+.switcher-dropdown-panel.p-dropdown-panel {
+  .p-dropdown-items-wrapper {
+    border: 1px solid $gray-300;
+    border-radius: rem(6px);
+    box-shadow: $box-shadow-5;
+
+    .p-dropdown-item {
+      padding: rem(8px) rem(16px);
+      font-size: $size-xsmall;
+      line-height: rem(20px);
+      font-weight: $weight-bold;
+    }
+  }
+}

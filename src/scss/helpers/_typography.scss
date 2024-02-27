@@ -1,0 +1,40 @@
+$text-align: (
+  'text-center': center,
+  'text-justify': justify,
+  'text-left': left,
+  'text-right': right,
+);
+
+$text-decoration: (
+  'underline': underline,
+  'line-through': line-through,
+);
+
+$text-transform: (
+  'lowercase': lowercase,
+  'uppercase': uppercase,
+  'capitalize': capitalize,
+);
+
+$font-weight: (
+  'font-normal': $weight-normal,
+  'font-bold': $weight-bold,
+);
+
+$font-size: (
+  'text-3xs': $size-xxxsmall,
+  'text-2xs': $size-xxsmall,
+  'text-xs': $size-xsmall,
+  'text-sm': $size-small,
+  'text-md': $size-medium,
+  'text-lg': $size-large,
+  'text-xl': $size-xlarge,
+  'text-2xl': $size-xxlarge,
+  'text-3xl': $size-xxxlarge,
+);
+
+@include style-class('', 'text-align', $text-align, $responsive);
+@include style-class('', 'font-weight', $font-weight, false);
+@include style-class('', 'font-size', $font-size, false);
+@include style-class('', 'text-decoration', $text-decoration, false);
+@include style-class('', 'text-transform', $text-transform, false);

@@ -1,0 +1,16 @@
+// Scss Functions
+
+@use 'sass:math';
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function rem($value) {
+  $rem-value: math.div(strip-unit($value), $rem-base) + rem;
+  @return $rem-value;
+}

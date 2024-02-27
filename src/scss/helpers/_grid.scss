@@ -1,0 +1,89 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1 * $gutter;
+  margin-left: -1 * $gutter;
+  margin-right: -1 * $gutter;
+}
+
+.row > .col,
+.row > [class*='col'] {
+  box-sizing: border-box;
+}
+
+.row-nogutter {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row-nogutter > .col,
+.row-nogutter > [class*='col'] {
+  padding: 0;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: $gutter;
+}
+
+.col-fixed {
+  flex: 0 0 auto;
+  padding: $gutter;
+}
+
+$grid-columns: (
+  '1': 8.3333%,
+  '2': 16.6667%,
+  '3': 25%,
+  '4': 33.3333%,
+  '5': 41.6667%,
+  '6': 50%,
+  '7': 58.3333%,
+  '8': 66.6667%,
+  '9': 75%,
+  '10': 83.3333%,
+  '11': 91.6667%,
+  '12': 100%,
+);
+
+$grid-column-offsets: (
+  'offset-0': 0,
+  'offset-1': 8.3333%,
+  'offset-2': 16.6667%,
+  'offset-3': 25%,
+  'offset-4': 33.3333%,
+  'offset-5': 41.6667%,
+  'offset-6': 50%,
+  'offset-7': 58.3333%,
+  'offset-8': 66.6667%,
+  'offset-9': 75%,
+  'offset-10': 83.3333%,
+  'offset-11': 91.6667%,
+  'offset-12': 100%,
+);
+
+@each $col, $width in $grid-columns {
+  .col-#{$col} {
+    flex: 0 0 auto;
+    width: $width;
+    padding: $gutter;
+  }
+}
+
+@if ($responsive) {
+  @each $breakpoint, $size in $breakpoints {
+    @media screen and (min-width: #{$size}) {
+      @each $col, $width in $grid-columns {
+        .col-#{$breakpoint}-#{$col} {
+          flex: 0 0 auto;
+          width: $width;
+          padding: $gutter;
+        }
+      }
+    }
+  }
+}
+
+@include style-class('col-', 'margin-left', $grid-column-offsets, $responsive);

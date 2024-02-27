@@ -1,0 +1,24 @@
+<aqm-container [sidebar]="false">
+  <div class="content">
+    <img
+      src="/assets/icons/broken-page.svg"
+      alt="Not found icon"
+      i18n-alt="Not found icon alternative text"
+    />
+    <h2 i18n="Not-found page header">
+      The page you are looking for can’t be reached
+    </h2>
+    <p class="message" i18n="Not-found page text">
+      Please try to reload, check the link in the browser or click one of the
+      menu sections to choose a new direction.
+    </p>
+    <a
+      class="action p-button-secondary"
+      pButton
+      pRipple
+      routerLink="/map"
+      label="Homepage"
+      i18n-label="Homepage action label on not-found page"
+    ></a>
+  </div>
+</aqm-container>

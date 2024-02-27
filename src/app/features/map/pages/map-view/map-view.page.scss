@@ -1,0 +1,27 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+.score-legend {
+  display: flex;
+  padding: rem(16px);
+  background: $gray-0;
+  box-shadow: $box-shadow-1;
+  border-radius: $border-radius-normal;
+
+  &-item {
+    min-width: rem(56px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $size-xsmall;
+    color: $gray-500;
+  }
+
+  &-indicator {
+    display: block;
+    width: rem(24px);
+    height: rem(24px);
+    margin-bottom: rem(8px);
+    border-radius: 50%;
+  }
+}

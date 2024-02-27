@@ -1,0 +1,35 @@
+<div class="page-container">
+  <div class="login-panel">
+    <img
+      class="login-logo"
+      src="assets/images/redacted-logo.png"
+      alt="Redacted Logo"
+      i18n-alt="Logo alternative text on Login page"
+    />
+
+    <h4 class="login-title" i18n="login-page|Login panel title">Redacted</h4>
+
+    <h5 class="login-subtitle" i18n="login-page|Login panel subtitle">
+      Enviromental Information Managment System
+    </h5>
+
+    <button
+      pButton
+      pRipple
+      type="button"
+      label="Login"
+      i18n-label="login-page|Login button label"
+      class="p-button-secondary p-button-lg login-btn"
+      (click)="login()"
+    ></button>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="m-7">
+    <h3 class="title" i18n="login-page|Page title">Brand</h3>
+    <p class="slogan" i18n="login-page|Page slogan">
+      Where humanity and nature live in harmony
+    </p>
+  </div>
+</div>

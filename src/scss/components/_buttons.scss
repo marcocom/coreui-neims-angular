@@ -1,0 +1,114 @@
+$btn-height: 3em !default;
+$btn-line-height: $line-height-base !default;
+$btn-font-weight: $weight-bold !default;
+
+$btn-size: (
+  'sm': (
+    'font-size': $size-xsmall,
+    'padding': 0 rem(16px),
+    'border-radius': rem(6px),
+  ),
+  'md': (
+    'font-size': $size-small,
+    'padding': 0 rem(18px),
+    'border-radius': rem(8px),
+  ),
+  'lg': (
+    'font-size': $size-medium,
+    'padding': 0 rem(20px),
+    'border-radius': rem(8px),
+  ),
+) !default;
+
+$btn-color: (
+  'primary': (
+    'color': $gray-50,
+    'background': $gray-950,
+    'border': 1px solid $gray-950,
+    'hover': (
+      'background': $gray-800,
+      'border-color': $gray-800,
+    ),
+  ),
+  'secondary': (
+    'color': $gray-950,
+    'background': $gray-50,
+    'border': 1px solid $gray-950,
+    'hover': (
+      'background': $cream,
+    ),
+  ),
+  'text': (
+    'color': $gray-950,
+    'background': transparent,
+    'border': none,
+  ),
+) !default;
+
+$btn-icon-margin: rem(8px) !default;
+
+$btn-disabled: (
+  'border-color': $gray-400,
+  'background': $gray-400,
+  'cursor': not-allowed,
+) !default;
+
+$btn-secondary-disabled: (
+  'border-color': $gray-400,
+  'background': none,
+  'color': $gray-400,
+) !default;
+
+.p-button {
+  @include set-btn-size($btn-size, 'md');
+  @include set-btn-color($btn-color, 'primary');
+  height: $btn-height;
+  line-height: $btn-line-height;
+  font-weight: $btn-font-weight;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &:disabled {
+    @include set-props($btn-disabled);
+  }
+
+  .p-button-icon {
+    font-weight: $btn-font-weight;
+  }
+
+  &.p-button-sm {
+    @include set-btn-size($btn-size, 'sm');
+  }
+
+  &.p-button-lg {
+    @include set-btn-size($btn-size, 'lg');
+  }
+
+  &.p-button-icon-only {
+    width: $btn-height;
+    padding: 0;
+  }
+
+  &.p-button-rounded {
+    border-radius: 50%;
+  }
+
+  .p-button-icon-left {
+    margin-right: $btn-icon-margin;
+  }
+
+  .p-button-icon-right {
+    margin-left: $btn-icon-margin;
+  }
+
+  &.p-button-secondary {
+    @include set-btn-color($btn-color, 'secondary');
+
+    &:disabled {
+      @include set-props($btn-secondary-disabled);
+    }
+  }
+
+  &.p-button-text {
+    @include set-btn-color($btn-color, 'text');
+  }
+}

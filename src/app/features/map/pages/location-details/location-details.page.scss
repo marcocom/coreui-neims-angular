@@ -1,0 +1,105 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+.wrapper {
+  padding: rem(32px) 0;
+
+  &-light {
+    background: $gray-0;
+  }
+}
+
+.location-geo {
+  margin: 0;
+  margin-right: rem(24px);
+  text-align: right;
+
+  dt {
+    margin-bottom: rem(4px);
+    font-size: $size-xsmall;
+    font-weight: $weight-bold;
+  }
+
+  dd {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  @include respond-to('lg') {
+    margin-top: rem(60px);
+    margin-right: 0;
+    text-align: left;
+  }
+}
+
+.location-image {
+  height: rem(182px);
+}
+
+.date {
+  font-size: $size-small;
+  color: $gray-500;
+  margin: 0;
+  line-height: 1;
+}
+
+.legend {
+  display: flex;
+  flex-direction: row;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    font-size: $size-small;
+    color: $gray-500;
+
+    &:not(:last-child) {
+      margin-right: rem(16px);
+    }
+  }
+
+  &-indicator {
+    display: inline-block;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(8px);
+    border-radius: 50%;
+  }
+}
+
+.chart {
+  height: rem(290px);
+}
+
+.chart-tooltip {
+  padding: rem(8px);
+  background: $gray-800;
+  border-radius: $border-radius-small;
+
+  &-timestamp {
+    margin: 0;
+    font-size: $size-xsmall;
+    color: $gray-400;
+    white-space: nowrap;
+  }
+
+  &-metric {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: rem(4px);
+    color: $gray-0;
+  }
+
+  &-indicator {
+    display: inline-block;
+    width: rem(8px);
+    height: rem(8px);
+    margin-right: rem(6px);
+    border-radius: 50%;
+  }
+}

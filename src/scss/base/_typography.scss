@@ -1,0 +1,47 @@
+// Typography rules
+
+body {
+  font-family: $font-family-base;
+  color: $font-color-base;
+  font-weight: $weight-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5em 0;
+  font-weight: $weight-bold;
+}
+
+h1 {
+  font-size: $size-xxxlarge;
+}
+
+h2 {
+  font-size: $size-xxlarge;
+}
+
+h3 {
+  font-size: $size-xlarge;
+}
+
+h4 {
+  font-size: $size-large;
+}
+
+h5 {
+  font-size: $size-medium;
+}
+
+h6 {
+  font-size: $size-small;
+}
+
+p {
+  margin: 0.5em 0;
+  font-size: $size-medium;
+  line-height: 1.3;
+}

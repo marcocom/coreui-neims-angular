@@ -1,0 +1,67 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+$login-panel-bg-color: rgba($gray-950, 90%);
+
+.page-container {
+  @include bg-image('/assets/images/login-bg.jpg');
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.login-panel {
+  align-self: flex-end;
+  width: rem(392px);
+  margin: rem(64px);
+  padding: rem(40px) rem(24px);
+  background: $login-panel-bg-color;
+  border-radius: $border-radius-normal;
+  box-sizing: border-box;
+}
+
+.login-logo {
+  display: block;
+  height: rem(90px);
+  margin: 0 auto;
+}
+
+.login-title {
+  margin-top: rem(32px);
+  margin-bottom: rem(16px);
+  font-size: $size-xxlarge;
+  font-weight: $weight-bold;
+  color: $gray-0;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.login-subtitle {
+  font-size: $size-medium;
+  font-weight: $weight-normal;
+  color: $gray-0;
+  text-align: center;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: rem(42px);
+}
+
+.title {
+  margin: rem(16px) 0;
+  font-size: $size-xxlarge;
+  font-weight: $weight-normal;
+  color: $gray-0;
+}
+
+.slogan {
+  max-width: rem(800px);
+  margin: rem(16px) 0;
+  font-size: rem(48px);
+  font-weight: $weight-bold;
+  color: $gray-0;
+  text-transform: uppercase;
+}

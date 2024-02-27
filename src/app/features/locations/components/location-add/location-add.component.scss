@@ -1,0 +1,25 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$spacer: rem(24px);
+$stepper-head-height: rem(52px);
+$actions-height: rem(96px);
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - #{$stepper-head-height});
+  overflow: hidden;
+}
+
+.action-row {
+  width: 100%;
+  height: $actions-height;
+  position: absolute;
+  bottom: 0;
+  padding: $spacer;
+  background: $gray-0;
+  text-align: end;
+  border-top: 1px solid $gray-300;
+}

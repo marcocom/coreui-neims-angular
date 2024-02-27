@@ -1,0 +1,48 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+.files {
+  display: flex;
+  flex-flow: row wrap;
+
+  .file:not(:last-child) {
+    margin-right: rem(16px);
+  }
+}
+
+.file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding: rem(8px);
+  margin-top: rem(16px);
+  background: $gray-200;
+  font-size: $size-small;
+  border-radius: $border-radius-normal;
+  overflow: hidden;
+  transition: background-color 0.2s;
+
+  &-button {
+    display: flex;
+    padding: rem(2px);
+    margin-left: rem(12px);
+    background: transparent;
+    font-size: $size-medium;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: $gray-50;
+  }
+}
+
+.upload-progress {
+  position: absolute;
+  height: rem(3px);
+  top: 0;
+  left: 0;
+  background: $gold;
+  transition: width 0.2s;
+}

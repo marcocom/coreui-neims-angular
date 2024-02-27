@@ -1,0 +1,17 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: $body-bg-color;
+}
+
+::placeholder {
+  color: $placeholder-color;
+}
+
+:focus {
+  outline: none;
+}

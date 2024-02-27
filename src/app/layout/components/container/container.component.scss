@@ -1,0 +1,26 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+:host {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+
+  &.with-header {
+    top: $header-height;
+  }
+
+  &.with-sidebar {
+    left: $sidebar-width;
+  }
+
+  ::ng-deep {
+    .p-scrollpanel-content {
+      position: static;
+    }
+  }
+}

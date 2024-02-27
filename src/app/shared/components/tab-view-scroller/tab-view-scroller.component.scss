@@ -1,0 +1,59 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$tab-view-scroller-height: rem(32px) !default;
+$tab-view-scroller-bg-color: $gray-0 !default;
+$tab-view-scroller-border-color: $gray-950 !default;
+$tab-view-scroller-border-radius: rem(6px) !default;
+$tab-view-scroller-btn-size: rem(34px) !default;
+
+.tab-view-scroller {
+  position: relative;
+
+  &-btn {
+    position: absolute;
+    top: 0;
+    width: $tab-view-scroller-btn-size;
+    height: $tab-view-scroller-btn-size;
+    font-size: $size-xsmall;
+    z-index: 2;
+
+    &-left {
+      left: 0;
+      border-radius: $tab-view-scroller-border-radius 0 0 $tab-view-scroller-border-radius;
+    }
+
+    &-right {
+      right: 0;
+      border-radius: 0 $tab-view-scroller-border-radius $tab-view-scroller-border-radius 0;
+    }
+  }
+
+  ::ng-deep {
+    .p-tabview-nav {
+      margin: 0 $tab-view-scroller-btn-size;
+      flex-wrap: nowrap;
+      background: $tab-view-scroller-bg-color;
+      border-top: 1px solid $tab-view-scroller-border-color;
+      border-bottom: 1px solid $tab-view-scroller-border-color;
+      overflow: hidden;
+
+      li {
+        width: 100%;
+
+        .p-tabview-nav-link {
+          height: $tab-view-scroller-height;
+          display: flex;
+          justify-content: center;
+          border-left: 1px solid $tab-view-scroller-border-color;
+        }
+
+        &:first-child {
+          .p-tabview-nav-link {
+            border-left: none;
+          }
+        }
+      }
+    }
+  }
+}

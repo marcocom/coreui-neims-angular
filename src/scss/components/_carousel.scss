@@ -1,0 +1,74 @@
+$carousel-indicator-size: rem(6px);
+$carousel-radius: 50%;
+$carousel-control-size: rem(34px);
+$carousel-control-spacer: rem(16px);
+
+.p-carousel.p-carousel-horizontal,
+.p-carousel-container,
+.p-carousel-items-container,
+.item-image {
+  width: 100%;
+  height: 100%;
+}
+
+.p-carousel-content {
+  position: relative;
+
+  .p-carousel-indicators.p-reset {
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    bottom: $carousel-control-spacer;
+
+    .p-carousel-indicator {
+      width: $carousel-indicator-size;
+      height: $carousel-indicator-size;
+      background: $gray-0;
+      border-radius: $carousel-radius;
+
+      &.p-highlight {
+        width: rem(9px);
+        height: rem(9px);
+      }
+
+      &:not(:last-child) {
+        margin-right: rem(4px);
+      }
+    }
+  }
+
+  .p-carousel-next,
+  .p-carousel-prev {
+    width: $carousel-control-size;
+    height: $carousel-control-size;
+    border: 1px solid $gray-950;
+    border-radius: $carousel-radius;
+    background: $gray-0;
+    position: absolute;
+    z-index: 2;
+
+    &.p-disabled {
+      display: none;
+    }
+  }
+
+  .p-carousel-next {
+    right: $carousel-control-spacer;
+
+    .p-carousel-prev-icon.pi-chevron-right {
+      &::before {
+        content: '\e91b';
+      }
+    }
+  }
+
+  .p-carousel-prev {
+    left: $carousel-control-spacer;
+
+    .p-carousel-prev-icon.pi-chevron-left {
+      &::before {
+        content: '\e91a';
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+<aqm-container [sidebar]="false">
+  <section class="wrapper wrapper-light">
+    <div class="container">
+      <div class="d-flex">
+        <button
+          type="button"
+          pButton
+          icon="pi pi-arrow-left"
+          class="p-button-text p-button-lg pl-1"
+          label="Back to the map"
+          i18n-label="Label for navigate back button"
+          routerLink="/map"
+        ></button>
+      </div>
+
+      <ng-container *ngIf="location$ | async as location">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="pr-lg-8">
+              <h2>{{ location.name }}</h2>
+              <p>{{ location.description }}</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div
+              class="
+                d-flex
+                justify-content-end
+                lg-justify-content-between lg-align-items-end
+              "
+            >
+              <dl class="location-geo">
+                <dt i18n="Longitude label on details page">Longitude</dt>
+                <dd>{{ location.longitude }}</dd>
+
+                <dt i18n="Latitude label on details page">Latitude</dt>
+                <dd>{{ location.latitude }}</dd>
+
+                <dt i18n="Altitude label on details page">Altitude</dt>
+                <dd>{{ location.altitude }} m</dd>
+              </dl>
+
+              <img
+                class="location-image"
+                [src]="location.image || '/assets/images/location-placeholder-2x.png'"
+                alt="Location image"
+                i18n-alt="Alternative message for location image"
+              />
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+
+  <ng-container *ngIf="templateData$ | async as data">
+    <section class="wrapper">
+      <div class="container">
+        <h4 i18n="Indicators section title">Indicators overview</h4>
+
+        <div class="d-flex justify-content-between">
+          <p class="date">{{ data.mapFilters | dateRangeLabel }}</p>
+
+          <div class="legend">
+            <div class="legend-item" *ngFor="let score of scores">
+              <i
+                class="legend-indicator"
+                [style.backgroundColor]="score.color"
+              ></i>
+              <span>{{ score.label }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4" *ngIf="!data.loading">
+          <ng-container *ngFor="let capability of data.capabilities">
+            <ng-container
+              *ngIf="data.metrics | metricsFilter: capability.metricKey as metrics"
+            >
+              <div
+                class="col-12 col-lg-6"
+                *ngIf="
+                  metrics.length !== 0 &&
+                  (
+                    data.mapFilters.capabilities.length === 0 ||
+                    data.mapFilters.capabilities.includes(capability.name)
+                  )
+                "
+              >
+                <aqm-time-series-chart
+                  class="chart"
+                  [label]="capability.visibleName"
+                  [data]="metrics"
+                  xAxisKey="measurementDate"
+                  yAxisKey="metrics.{{capability.metricKey}}"
+                  [yLabel]="capability.metricUnit"
+                  [xMin]="data.mapFilters.dateFrom"
+                  [xMax]="data.mapFilters.dateTo"
+                >
+                  <ng-template #tooltip let-data>
+                    <div class="chart-tooltip" *ngIf="data">
+                      <p class="chart-tooltip-timestamp">
+                        {{ data.measurementDate | date: dateTimeFormat }}
+                      </p>
+                      <div class="chart-tooltip-metric">
+                        <i
+                          class="chart-tooltip-indicator"
+                          [style.backgroundColor]="scores[data.scores[capability.metricKey]].color"
+                        ></i>
+                        <span>
+                          {{ data.metrics[capability.metricKey] | number }}
+                        </span>
+                        <span class="text-2xs ml-1">
+                          {{ capability.metricUnit }}
+                        </span>
+                      </div>
+                    </div>
+                  </ng-template>
+                </aqm-time-series-chart>
+              </div>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </section>
+  </ng-container>
+</aqm-container>

@@ -1,0 +1,29 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$content-space: rem(200px);
+
+.content {
+  width: rem(424px);
+  top: $content-space;
+  left: $content-space;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: rem(5px);
+    width: rem(32px);
+  }
+
+  .message {
+    margin-top: rem(40px);
+    margin-bottom: rem(52px);
+  }
+
+  .action {
+    margin-right: auto;
+    text-decoration: none;
+    font-size: $size-medium;
+  }
+}

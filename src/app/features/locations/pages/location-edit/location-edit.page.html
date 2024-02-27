@@ -1,0 +1,15 @@
+<aqm-sidebar>
+  <aqm-location-edit
+    [location]="locationData"
+    (navigateBack)="onNavigateBack($event)"
+    (stepChange)="onSetCurrentStep($event)"
+    (editedLocationSet)="onSetEditableLocation()"
+    (resetToInitial)="setCoordinatesToInitial($event)"
+    (editLocation)="onEditLocation()"
+    (storeLocationData)="onStoreLocationData($event)"
+  ></aqm-location-edit>
+</aqm-sidebar>
+
+<aqm-container>
+  <aqm-map [options]="options" (mapInitialized)="onMapInitialized()"></aqm-map>
+</aqm-container>

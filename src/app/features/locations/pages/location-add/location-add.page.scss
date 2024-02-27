@@ -1,0 +1,44 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$control-size: rem(56px);
+$spacer: rem(24px);
+
+.control-button {
+  width: $control-size;
+  height: $control-size;
+  margin: $spacer;
+  padding: rem(8px) rem(14px);
+  display: none;
+  text-align: center;
+  background: $gray-0;
+  border: none;
+  border-radius: $border-radius-normal;
+  box-shadow: $box-shadow-2;
+  cursor: pointer;
+
+  img {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.active,
+.control-button:hover:not(:disabled) {
+  img {
+    opacity: 1;
+  }
+}
+
+.visible {
+  display: block;
+}
+
+::ng-deep {
+  .crosshair-cursor .map-container {
+    cursor: crosshair;
+  }
+}

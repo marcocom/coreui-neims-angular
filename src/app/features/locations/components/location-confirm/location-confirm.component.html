@@ -1,0 +1,16 @@
+<h2
+  class="mt-2 mb-4 px-4"
+  [class.mt-5]="type === 'edit'"
+  i18n="add-location-confirm|Page title"
+>
+  Preview
+</h2>
+
+<ng-container *ngIf="location">
+  <div class="content-wrapper">
+    <aqm-location-data
+      [location]="location"
+      [images]="images"
+    ></aqm-location-data>
+  </div>
+</ng-container>

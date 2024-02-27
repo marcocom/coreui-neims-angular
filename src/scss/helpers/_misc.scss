@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @each $breakpoint, $size in $container-sizes {
+    @include respond-to($breakpoint) {
+      max-width: $size;
+    }
+  }
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.separator {
+  width: 100%;
+  height: rem(1px);
+  margin: rem(24px) 0;
+  background: $gray-300;
+}
+
+.ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,75 @@
+<div class="image-container">
+  <p-carousel
+    *ngIf="images.length; else defaultImage"
+    [showIndicators]="images.length > 1"
+    [value]="images"
+  >
+    <ng-template let-image pTemplate="item">
+      <img class="location-image" [src]="image" />
+    </ng-template>
+  </p-carousel>
+</div>
+
+<div class="px-4">
+  <div class="my-3">
+    <aqm-location-visibility
+      [visibility]="location.visibility"
+    ></aqm-location-visibility>
+  </div>
+
+  <h3 class="text-xl my-3 text-wrap">{{ location.name }}</h3>
+
+  <p class="text-sm my-3 text-wrap">{{ location.description }}</p>
+
+  <div class="row my-3">
+    <div class="col-5 d-flex flex-column">
+      <span
+        class="text-xs font-bold mb-1"
+        i18n="location-details|Longitude label"
+      >
+        Longitude
+      </span>
+      <span>{{ location.longitude | number: '2.8' }}</span>
+    </div>
+
+    <div class="col-7 d-flex flex-column">
+      <span
+        class="text-xs font-bold mb-1"
+        i18n="location-details|Latitude label"
+      >
+        Latitude
+      </span>
+      <span>{{ location.latitude | number: '2.8' }}</span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div *ngIf="location.altitude" class="col-5 d-flex flex-column">
+      <span
+        class="text-xs font-bold mb-1"
+        i18n="location-details|Altitude label"
+      >
+        Altitude
+      </span>
+      <span>{{ location?.altitude }} m</span>
+    </div>
+
+    <div class="col-7 d-flex flex-column">
+      <span
+        class="text-xs font-bold mb-1"
+        i18n="location-details|Location type label"
+      >
+        Location type
+      </span>
+      <span>{{ location.type | translate: 'location-type' }}</span>
+    </div>
+  </div>
+</div>
+
+<ng-template #defaultImage>
+  <img
+    class="location-image default"
+    src="assets/images/location-generic.png"
+    [alt]="location.name"
+  />
+</ng-template>

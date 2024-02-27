@@ -1,0 +1,88 @@
+<div class="sidebar-header">
+  <button
+    type="button"
+    pButton
+    icon="pi pi-arrow-left"
+    class="p-button-text p-button-lg"
+    label="Back to all locations"
+    i18n-label="location-details|Label for navigate back button"
+    (click)="onNavigateBack()"
+  ></button>
+</div>
+
+<ng-container *ngIf="location">
+  <div class="mb-3">
+    <aqm-location-data
+      [location]="location"
+      [images]="images"
+    ></aqm-location-data>
+
+    <div *ngIf="location.station; else linkUnit" class="unit-card">
+      <div class="d-flex flex-column">
+        <span
+          class="text-xs font-bold"
+          i18n="location-details|Linked unit label"
+        >
+          Linked unit
+        </span>
+        <span class="font-bold underline mt-2">
+          {{ location.station.serialNumber }}
+        </span>
+      </div>
+
+      <div class="d-flex justify-content-between mt-3">
+        <p-dropdown
+          styleClass="switcher-dropdown"
+          panelStyleClass="switcher-dropdown-panel"
+          [options]="stationVisibilityOptions"
+          optionLabel="name"
+        ></p-dropdown>
+
+        <button
+          type="button"
+          pButton
+          pRipple
+          class="p-button-sm"
+          label="Unlink unit"
+          i18n-label="location-details|Label for unlink unit button"
+          (click)="onUnlinkUnit(location)"
+        ></button>
+      </div>
+    </div>
+    <ng-template #linkUnit>
+      <button
+        type="button"
+        pButton
+        pRipple
+        class="ml-4 p-button-sm"
+        label="Link unit"
+        i18n-label="location-details|Label for link unit button"
+        (click)="onLinkUnit(location)"
+      ></button>
+    </ng-template>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="sidebar-footer">
+    <button
+      type="button"
+      pButton
+      pRipple
+      class="p-button-secondary p-button-lg mr-4"
+      label="Edit location"
+      i18n-label="location-details|Label for edit location button"
+      (click)="onEdit(location)"
+    ></button>
+
+    <button
+      type="button"
+      pButton
+      pRipple
+      class="p-button-lg"
+      label="Delete location"
+      i18n-label="location-details|Label for delete location button"
+      (click)="onDelete(location)"
+    ></button>
+  </div>
+</ng-container>

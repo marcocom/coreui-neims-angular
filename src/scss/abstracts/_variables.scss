@@ -1,0 +1,109 @@
+// Scss Variables
+
+// Colors
+$gray-1000: #000000 !default;
+$gray-950: #13100d !default;
+$gray-850: #171717 !default;
+$gray-800: #262626 !default;
+$gray-700: #404040 !default;
+$gray-600: #525252 !default;
+$gray-500: #737373 !default;
+$gray-400: #a3a3a3 !default;
+$gray-300: #d4d4d4 !default;
+$gray-200: #e5e5e5 !default;
+$gray-100: #f5f5f5 !default;
+$gray-50: #fdfdfd !default;
+$gray-0: #ffffff !default;
+
+$cream: #f9f7f2 !default;
+
+$gold: #ebc03f !default;
+$gold-100: $gold !default;
+$gold-25: rgba($gold, 25%) !default;
+
+$dark-blue: #003865 !default;
+$dark-blue-100: $dark-blue !default;
+$dark-blue-50: rgba($dark-blue, 50%) !default;
+$dark-blue-25: rgba($dark-blue, 25%) !default;
+
+$green: #006b44 !default;
+$green-100: $green !default;
+$green-50: rgba($green, 50%) !default;
+$green-25: rgba($green, 25%) !default;
+
+$orange: #f18825 !default;
+$orange-100: $orange !default;
+$orange-50: rgba($orange, 50%) !default;
+$orange-25: rgba($orange, 25%) !default;
+
+$light-blue: #007bb5 !default;
+$light-blue-100: $light-blue !default;
+$light-blue-50: rgba($light-blue, 50%) !default;
+$light-blue-25: rgba($light-blue, 25%) !default;
+
+$red: #e0403f !default;
+$red-100: $red !default;
+$red-50: rgba($red, 50%) !default;
+$red-25: rgba($red, 25%) !default;
+
+$body-bg-color: $cream !default;
+$font-color-base: $gray-950 !default;
+$placeholder-color: $gray-500 !default;
+$overlay-background: rgba($gray-1000, 75%) !default;
+
+$error-color: $red !default;
+
+// Font
+$font-family-base: Arial, sans-serif !default;
+$font-family-prime: primeicons !default;
+$line-height-base: 1.5 !default;
+
+// Weight
+$weight-normal: 400 !default;
+$weight-bold: 700 !default;
+
+// Sizes
+$rem-base: 16 !default;
+$spacer: 1rem !default;
+$gutter: 0.5rem !default;
+
+$size-xxxsmall: 0.5rem !default;
+$size-xxsmall: 0.625rem !default;
+$size-xsmall: 0.75rem !default;
+$size-small: 0.875rem !default;
+$size-medium: 1rem !default;
+$size-large: 1.125rem !default;
+$size-xlarge: 1.5rem !default;
+$size-xxlarge: 1.75rem !default;
+$size-xxxlarge: 2rem !default;
+
+// Radius
+$border-radius-normal: 0.5rem !default;
+$border-radius-small: 0.25rem !default;
+
+// Shadow
+$box-shadow-1: -3px 0 20px rgba(0, 0, 0, 0.2) !default;
+$box-shadow-2: 0 4px 8px rgba(0, 0, 0, 0.15) !default;
+$box-shadow-3: 0 3px 4px rgba(0, 0, 0, 0.25) !default;
+$box-shadow-4: 0 4px 8px rgba(0, 0, 0, 0.25) !default;
+$box-shadow-5: 0 2px 4px rgba(0, 0, 0, 0.15) !default;
+
+// Breakpoints
+$responsive: true !default;
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+) !default;
+
+// Layout
+$header-height: rem(80px) !default;
+$sidebar-width: rem(408px) !default;
+
+$container-sizes: (
+  'sm': 540px,
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1040px,
+) !default;

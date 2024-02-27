@@ -1,0 +1,43 @@
+<header class="header">
+  <a routerLink="map">
+    <img
+      src="/assets/images/logo.svg"
+      alt="Neims Logo"
+      i18n-alt="Header logo alternative text"
+    />
+  </a>
+
+  <p-tabMenu class="flex-grow-1" [model]="menuTabItems"></p-tabMenu>
+
+  <p-dropdown
+    #langMenu
+    [options]="languages"
+    [appendTo]="langMenu"
+    [(ngModel)]="selectedLanguage"
+    optionLabel="label"
+    styleClass="header-dropdown"
+    panelStyleClass="header-dropdown-panel"
+  ></p-dropdown>
+
+  <p-menu
+    #menu
+    styleClass="align-right"
+    appendTo="body"
+    [popup]="true"
+    [model]="userActions"
+    (onShow)="profileMenuOpened = true"
+    (onHide)="profileMenuOpened = false"
+  ></p-menu>
+
+  <button
+    pButton
+    type="button"
+    class="profile-menu"
+    [class.profile-menu-opened]="profileMenuOpened"
+    (click)="menu.toggle($event)"
+  >
+    <p-avatar icon="pi pi-user" shape="circle"></p-avatar>
+    <span class="text-md font-normal px-2">{{ currentUserName }}</span>
+    <i class="pi pi-chevron-down profile-menu-chevron"></i>
+  </button>
+</header>

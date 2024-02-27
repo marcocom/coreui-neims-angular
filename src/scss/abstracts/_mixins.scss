@@ -1,0 +1,92 @@
+// Scss Mixins
+
+@mixin set-props($props) {
+  @each $prop, $value in $props {
+    @if $prop == 'hover' {
+      &:hover {
+        @include set-props(map-get($props, 'hover'));
+      }
+    } @else {
+      #{$prop}: $value;
+    }
+  }
+}
+
+@mixin set-btn-size($btn-size, $size) {
+  $config: map-get($btn-size, $size);
+
+  @include set-props($config);
+}
+
+@mixin set-btn-color($btn-color, $type) {
+  $config: map-get($btn-color, $type);
+
+  @include set-props($config);
+}
+
+@mixin bg-image($url) {
+  background-image: url(#{$url});
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin style-class($prefix, $prop, $map, $responsive) {
+  @each $key, $value in $map {
+    .#{$prefix + $key} {
+      #{$prop}: #{$value} !important;
+    }
+  }
+
+  @if ($responsive) {
+    @each $breakpoint, $size in $breakpoints {
+      @media screen and (min-width: #{$size}) {
+        .#{$prefix + $breakpoint}- {
+          @each $key, $value in $map {
+            &#{$key} {
+              #{$prop}: #{$value} !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin spacing-class($prefix, $directions, $scales, $responsive) {
+  @each $dir, $props in $directions {
+    @for $i from 0 through length($scales) - 1 {
+      .#{$prefix}#{$dir}-#{$i} {
+        @each $prop in $props {
+          #{$prop}: $spacer * nth($scales, $i + 1) !important;
+        }
+      }
+    }
+  }
+
+  @if ($responsive) {
+    @each $breakpoint, $size in $breakpoints {
+      @media screen and (min-width: #{$size}) {
+        @each $dir, $props in $directions {
+          @for $i from 0 through length($scales) - 1 {
+            .#{$prefix}#{$dir}-#{$breakpoint}-#{$i} {
+              @each $prop in $props {
+                #{$prop}: $spacer * nth($scales, $i + 1) !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Mixin to manage responsive breakpoints
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

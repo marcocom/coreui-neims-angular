@@ -1,0 +1,43 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $header-height;
+  padding: 0 rem(24px);
+  background: $gray-950;
+  z-index: 2;
+}
+
+.profile-menu {
+  height: rem(50px);
+  margin-left: rem(34px);
+  padding: 0 rem(8px);
+  border: none;
+
+  ::ng-deep .p-avatar {
+    width: rem(40px);
+    height: rem(40px);
+    color: $gray-500;
+    background: $gray-300;
+  }
+
+  &-chevron {
+    font-size: rem(8px);
+    transition: transform 0.2s;
+  }
+
+  &-opened {
+    background: $gray-800;
+
+    .profile-menu-chevron {
+      transform: rotate(180deg);
+    }
+  }
+}

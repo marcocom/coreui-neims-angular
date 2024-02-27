@@ -1,0 +1,15 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$actions-height: rem(72px);
+$caption-height: rem(80px);
+
+:host {
+  height: calc(100% - #{$actions-height});
+  overflow: hidden;
+}
+
+.content-wrapper {
+  height: calc(100% - #{$caption-height});
+  overflow: scroll;
+}

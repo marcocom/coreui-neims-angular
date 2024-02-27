@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8822206448271061589" datatype="html">
+        <source>Indoor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/location-type.enum.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Location type - Indoor</note>
+      </trans-unit>
+      <trans-unit id="1975356621924283237" datatype="html">
+        <source>Outdoor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/location-type.enum.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Location type - Outdoor</note>
+      </trans-unit>
+      <trans-unit id="4770172071138917155" datatype="html">
+        <source>Unpublished</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/location-visibility.enum.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Location visibility - Unpublished</note>
+      </trans-unit>
+      <trans-unit id="4058575476871566236" datatype="html">
+        <source>Published</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/location-visibility.enum.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Location visibility - Published</note>
+      </trans-unit>
+      <trans-unit id="8204176479746810612" datatype="html">
+        <source>Active</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/station-visibility.enum.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Station visibility - Active</note>
+      </trans-unit>
+      <trans-unit id="1859131936150262113" datatype="html">
+        <source>Inactive</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/api/enums/station-visibility.enum.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Station visibility - Inactive</note>
+      </trans-unit>
+      <trans-unit id="6561679696090539691" datatype="html">
+        <source>Brand Logo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Logo alternative text on Login page</note>
+      </trans-unit>
+      <trans-unit id="8073912170207600090" datatype="html">
+        <source>NEIMS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Login panel title</note>
+        <note priority="1" from="meaning">login-page</note>
+      </trans-unit>
+      <trans-unit id="7258981607049831201" datatype="html">
+        <source> Enviromental Information Managment System </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+        <note priority="1" from="description">Login panel subtitle</note>
+        <note priority="1" from="meaning">login-page</note>
+      </trans-unit>
+      <trans-unit id="4154151300418559751" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Login button label</note>
+        <note priority="1" from="meaning">login-page</note>
+      </trans-unit>
+      <trans-unit id="5015166518356048046" datatype="html">
+        <source>Brand Redacted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">login-page</note>
+      </trans-unit>
+      <trans-unit id="1968166828806708009" datatype="html">
+        <source> Where humanity and nature live in harmony </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/auth/pages/login/login.page.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+        <note priority="1" from="description">Page slogan</note>
+        <note priority="1" from="meaning">login-page</note>
+      </trans-unit>
+      <trans-unit id="398356881264024841" datatype="html">
+        <source>Very good</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/capability.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="meaning">Very good map legend label</note>
+      </trans-unit>
+      <trans-unit id="4459605898231930310" datatype="html">
+        <source>Good</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/capability.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="meaning">Good map legend label</note>
+      </trans-unit>
+      <trans-unit id="4387289907581311611" datatype="html">
+        <source>Medium</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/capability.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="meaning">Medium map legend label</note>
+      </trans-unit>
+      <trans-unit id="5647594204909579133" datatype="html">
+        <source>Bad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/capability.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="meaning">Bad map legend label</note>
+      </trans-unit>
+      <trans-unit id="3675004550181220023" datatype="html">
+        <source>Very bad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/constants/capability.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="meaning">Very bad map legend label</note>
+      </trans-unit>
+      <trans-unit id="2975239778491762269" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <note priority="1" from="description">Label for back button</note>
+        <note priority="1" from="meaning">add-location</note>
+      </trans-unit>
+      <trans-unit id="1955359063425434472" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-add/location-add.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-edit/location-edit.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+        <note priority="1" from="description">Label for save button</note>
+        <note priority="1" from="meaning">add-location</note>
+      </trans-unit>
+      <trans-unit id="3804351035454275453" datatype="html">
+        <source> Preview
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-confirm/location-confirm.component.html</context>
+          <context context-type="linenumber">6,7</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">add-location-confirm</note>
+      </trans-unit>
+      <trans-unit id="3555860226249289473" datatype="html">
+        <source> Identify the new location </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">add-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="2712928856042276520" datatype="html">
+        <source> Use the menu on the right in order to interact with the map and to identify the new location. Interact with the pin in order to adjust the location coordinates. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">7,10</context>
+        </context-group>
+        <note priority="1" from="description">Page sub-title</note>
+        <note priority="1" from="meaning">add-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="507950018763161557" datatype="html">
+        <source> Edit location </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">edit-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="6308059164313415635" datatype="html">
+        <source> Edit the information below in order to update the location’s information. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <note priority="1" from="description">Page sub-title</note>
+        <note priority="1" from="meaning">edit-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="1288974903521016615" datatype="html">
+        <source> Location coordinates </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+        <note priority="1" from="description">Longitude coordinates section label</note>
+        <note priority="1" from="meaning">add-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="7699463674086644278" datatype="html">
+        <source> Longitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <note priority="1" from="description">Longitude label on coordinates sidebar</note>
+        <note priority="1" from="meaning">add-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="2844397733730464683" datatype="html">
+        <source> Latitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-coordinates/location-coordinates.component.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+        <note priority="1" from="description">Latitude label on coordinates sidebar</note>
+        <note priority="1" from="meaning">add-location-coordinates</note>
+      </trans-unit>
+      <trans-unit id="996796192289613363" datatype="html">
+        <source> Add information </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="6478077951694868307" datatype="html">
+        <source> Fill the information below in order to proceed with the creation of a new location </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+        <note priority="1" from="description">Page sub-title</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="6039518614855631572" datatype="html">
+        <source> Edit location </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">edit-location-form</note>
+      </trans-unit>
+      <trans-unit id="2616255723551109842" datatype="html">
+        <source> Edit the information below in order to update the location’s information. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <note priority="1" from="description">Page sub-title</note>
+        <note priority="1" from="meaning">edit-location-form</note>
+      </trans-unit>
+      <trans-unit id="4537615739411816408" datatype="html">
+        <source> Location coordinates </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <note priority="1" from="description">Location coordinates section label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="1724732473122668263" datatype="html">
+        <source> Longitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+        <note priority="1" from="description">Longitude label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="6093038569621264476" datatype="html">
+        <source> Latitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <note priority="1" from="description">Latitude label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="921023358184374195" datatype="html">
+        <source>Modify</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <note priority="1" from="description">Label for modify coordinates button</note>
+        <note priority="1" from="meaning">add-location</note>
+      </trans-unit>
+      <trans-unit id="5579505536265926367" datatype="html">
+        <source> Location description </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <note priority="1" from="description">Location description section label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3174511883495671833" datatype="html">
+        <source> Insert a name and a short description of the location. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">73,74</context>
+        </context-group>
+        <note priority="1" from="description">Location description section text</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="5686758398829865712" datatype="html">
+        <source>Altitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Location altitude label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="5680492682680504963" datatype="html">
+        <source>Type altitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Location altitude placeholder</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="1510680476290989607" datatype="html">
+        <source> Altitude cannot be more than 20km </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+        <note priority="1" from="description">Altitude max limitation error</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="5538836687867306569" datatype="html">
+        <source> Altitude cannot be less than -20km </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+        <note priority="1" from="description">Altitude min limitation error</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3887412753964135366" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+        <note priority="1" from="description">Location name label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="4332078977484334913" datatype="html">
+        <source>Type a name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+        <note priority="1" from="description">Location name placeholder</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3290521568704432330" datatype="html">
+        <source> Name is required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">131,132</context>
+        </context-group>
+        <note priority="1" from="description">Location name required error</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="5010351007606361092" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <note priority="1" from="description">Location description label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="2345752375249183747" datatype="html">
+        <source>Write a description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+        <note priority="1" from="description">Location description placeholder</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="7371021438204474227" datatype="html">
+        <source> Select the type of location </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+        <note priority="1" from="description">Location type section label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3625757797036518662" datatype="html">
+        <source>Indoor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+        <note priority="1" from="description">Indoor radio label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="8378802218052513574" datatype="html">
+        <source>Outdoor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+        <note priority="1" from="description">Outdoor radio label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3737789122796666844" datatype="html">
+        <source> Location pictures </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">179,180</context>
+        </context-group>
+        <note priority="1" from="description">Location upload section label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="126680039806473020" datatype="html">
+        <source> Upload up to 10 pictures in png, jpeg or tiff format. The maximum file size is <x id="INTERPOLATION" equiv-text="{{ MAX_FILE_SIZE_LABEL }}"/>. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">182,185</context>
+        </context-group>
+        <note priority="1" from="description">Location upload section text</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="7492686093027514973" datatype="html">
+        <source>Upload pictures</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <note priority="1" from="description">Label for upload button</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="8175096904080430412" datatype="html">
+        <source> Location visibility </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">211,212</context>
+        </context-group>
+        <note priority="1" from="description">Location visibility section label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="9183588640722554908" datatype="html">
+        <source> You can directly publish the new location or save it and make it private and visible just to admin users. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">218,220</context>
+        </context-group>
+        <note priority="1" from="description">Location visibility section text</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="3321867891092303764" datatype="html">
+        <source>Published</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+        <note priority="1" from="description">Published radio label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="4745061079627005602" datatype="html">
+        <source>Unpublished</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.html</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+        <note priority="1" from="description">Unpublished radio label</note>
+        <note priority="1" from="meaning">add-location-form</note>
+      </trans-unit>
+      <trans-unit id="8962308810346041523" datatype="html">
+        <source>Upload failed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="meaning">File upload failed dialog title</note>
+      </trans-unit>
+      <trans-unit id="8311686890230920715" datatype="html">
+        <source>Try again</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+        <note priority="1" from="meaning">File upload failed dialog action label</note>
+      </trans-unit>
+      <trans-unit id="4695916721588353061" datatype="html">
+        <source>File upload was canceled.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+        <note priority="1" from="description">Image upload error message - Cancel</note>
+      </trans-unit>
+      <trans-unit id="4104393444675695639" datatype="html">
+        <source>Server error occurred. Please try later.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+        <note priority="1" from="description">Image upload error message - HTTP</note>
+      </trans-unit>
+      <trans-unit id="6615898776147508363" datatype="html">
+        <source>The image size is too big. Maximum file size is <x id="PH" equiv-text="this.MAX_FILE_SIZE_LABEL"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+        <note priority="1" from="description">Image upload error message - Max size</note>
+      </trans-unit>
+      <trans-unit id="5682397835918161869" datatype="html">
+        <source>File you choose has wrong dimensions. Please select another one.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data-form/location-data-form.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+        <note priority="1" from="description">Image upload error message - Dimension</note>
+      </trans-unit>
+      <trans-unit id="1111096270014973375" datatype="html">
+        <source> Longitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data/location-data.component.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+        <note priority="1" from="description">Longitude label</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="5479402366513569588" datatype="html">
+        <source> Latitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data/location-data.component.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+        <note priority="1" from="description">Latitude label</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="2751409497644650069" datatype="html">
+        <source> Altitude </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data/location-data.component.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+        <note priority="1" from="description">Altitude label</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="2542199395711269561" datatype="html">
+        <source> Location type </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-data/location-data.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+        <note priority="1" from="description">Location type label</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="5533917476979407640" datatype="html">
+        <source>Back to all locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Label for navigate back button</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="7437705687585763591" datatype="html">
+        <source> Linked unit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <note priority="1" from="description">Linked unit label</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="4132636881613870957" datatype="html">
+        <source>Unlink unit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">Label for unlink unit button</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="5480029058156764889" datatype="html">
+        <source>Link unit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">Label for link unit button</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="6872084664060773451" datatype="html">
+        <source>Edit location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <note priority="1" from="description">Label for edit location button</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="6000552010675345317" datatype="html">
+        <source>Delete location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-details/location-details.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Label for delete location button</note>
+        <note priority="1" from="meaning">location-details</note>
+      </trans-unit>
+      <trans-unit id="4862622518536408497" datatype="html">
+        <source>Locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Page title</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="8506857755637724909" datatype="html">
+        <source> In this section you are able to explore and edit the existing air quality locations and create new ones. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+        <note priority="1" from="description">Page description</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="7575095443039202368" datatype="html">
+        <source>Add new location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Label for add new location button</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="7956176170076429664" datatype="html">
+        <source> Filter by: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <note priority="1" from="description">Label for locations filters</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="3284022069695721104" datatype="html">
+        <source>Location type</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for location type dropdown</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="4137833419686475604" datatype="html">
+        <source>Visibility</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for visibility dropdown</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="4959658817845857564" datatype="html">
+        <source>Linking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for linking dropdown</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="1294570223877189837" datatype="html">
+        <source>Reset filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">Label for reset filters button</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="7759167913924080108" datatype="html">
+        <source>Linked to </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <note priority="1" from="description">Linked to label</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="5549802494374522669" datatype="html">
+        <source>Not linked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <note priority="1" from="description">Not linked label</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="3018256270095664517" datatype="html">
+        <source>Linked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Label for linked option</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="686892337542747775" datatype="html">
+        <source>Unlinked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/components/location-list/location-list.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <note priority="1" from="description">Label for unlinked option</note>
+        <note priority="1" from="meaning">location-list</note>
+      </trans-unit>
+      <trans-unit id="7667900020168250634" datatype="html">
+        <source>Add marker</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-add/location-add.page.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">Add marker alternative text</note>
+        <note priority="1" from="meaning">add-location</note>
+      </trans-unit>
+      <trans-unit id="6885339880092007961" datatype="html">
+        <source>New Location added</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-add/location-add.page.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+        <note priority="1" from="meaning">Add location success toast title</note>
+      </trans-unit>
+      <trans-unit id="2614251574154616764" datatype="html">
+        <source>Your location has been successfully added.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-add/location-add.page.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+        <note priority="1" from="meaning">Add location success toast message</note>
+      </trans-unit>
+      <trans-unit id="4536820164552409966" datatype="html">
+        <source>An error occurred</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-add/location-add.page.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+        <note priority="1" from="meaning">Add location failure toast title</note>
+      </trans-unit>
+      <trans-unit id="629261557624766827" datatype="html">
+        <source>Impossible to add the location.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-add/location-add.page.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+        <note priority="1" from="meaning">Add location failure toast message</note>
+      </trans-unit>
+      <trans-unit id="1385476798695324738" datatype="html">
+        <source>Location updated</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-edit/location-edit.page.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="meaning">Edit location success message title</note>
+      </trans-unit>
+      <trans-unit id="6604524166632853373" datatype="html">
+        <source>Your location information has been successfully updated.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/location-edit/location-edit.page.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="meaning">Edit location success message body</note>
+      </trans-unit>
+      <trans-unit id="6448176704240527724" datatype="html">
+        <source>Location deleted</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location success toast title</note>
+      </trans-unit>
+      <trans-unit id="7739716632239976867" datatype="html">
+        <source>The selected location has been deleted.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">266</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location success toast message</note>
+      </trans-unit>
+      <trans-unit id="4633914622565444267" datatype="html">
+        <source>An error occurred</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">276</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location failure toast title</note>
+      </trans-unit>
+      <trans-unit id="1320179160433182760" datatype="html">
+        <source>Impossible deleting the location.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location failure toast message</note>
+      </trans-unit>
+      <trans-unit id="2863967820344667026" datatype="html">
+        <source>You are deleting this location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location dialog title</note>
+      </trans-unit>
+      <trans-unit id="3489296942734366750" datatype="html">
+        <source>This action is irreversible and you will delete the location and all its information.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location dialog message</note>
+      </trans-unit>
+      <trans-unit id="8592007037726738434" datatype="html">
+        <source>Delete location</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/locations/pages/locations/locations.page.ts</context>
+          <context context-type="linenumber">285</context>
+        </context-group>
+        <note priority="1" from="meaning">Delete location confirm button label</note>
+      </trans-unit>
+      <trans-unit id="6102547561333807303" datatype="html">
+        <source>Air Quality</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description"> Page title</note>
+        <note priority="1" from="meaning">sidebar </note>
+      </trans-unit>
+      <trans-unit id="9174981489418670009" datatype="html">
+        <source> A system, that allows monitoring air quality data, in order to generate knowledge and predictive understanding, necessary to sustain and preserve Redacted. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">5,8</context>
+        </context-group>
+        <note priority="1" from="description">System description</note>
+      </trans-unit>
+      <trans-unit id="6026326706283807762" datatype="html">
+        <source>Data filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Filtering form title</note>
+      </trans-unit>
+      <trans-unit id="5461455994930692509" datatype="html">
+        <source> Locations </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+        <note priority="1" from="description">Label for select locations control</note>
+      </trans-unit>
+      <trans-unit id="7374100874915685587" datatype="html">
+        <source>Select monitoring stations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for select monitoring stations control</note>
+      </trans-unit>
+      <trans-unit id="873360369965558245" datatype="html">
+        <source> Indicators </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <note priority="1" from="description">Label for select indicators control</note>
+      </trans-unit>
+      <trans-unit id="4031519769276000450" datatype="html">
+        <source>Select indicators</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">Placeholder for select indicators control</note>
+      </trans-unit>
+      <trans-unit id="558045520685969939" datatype="html">
+        <source> Date range </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+        <note priority="1" from="description">Label for select date range control</note>
+      </trans-unit>
+      <trans-unit id="7760478281524847135" datatype="html">
+        <source> Both start and end date are required </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+        <note priority="1" from="description">Date range selection error message</note>
+      </trans-unit>
+      <trans-unit id="6849725902312323996" datatype="html">
+        <source>Reset filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+        <note priority="1" from="description">Label for reset filters button</note>
+      </trans-unit>
+      <trans-unit id="6704088225438410096" datatype="html">
+        <source>Apply filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <note priority="1" from="description">Label for apply filters button</note>
+      </trans-unit>
+      <trans-unit id="2978077934892462685" datatype="html">
+        <source> Data from the last 30 days </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-filters/map-filters.component.html</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+        <note priority="1" from="description">Default date range label</note>
+      </trans-unit>
+      <trans-unit id="370014894938632390" datatype="html">
+        <source> Average value over period </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-tooltip/map-tooltip.component.html</context>
+          <context context-type="linenumber">27,30</context>
+        </context-group>
+        <note priority="1" from="description">Metric average value tooltip text</note>
+      </trans-unit>
+      <trans-unit id="4462165726005928867" datatype="html">
+        <source>See more</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/components/map-tooltip/map-tooltip.component.html</context>
+          <context context-type="linenumber">43,44</context>
+        </context-group>
+        <note priority="1" from="description">See more tooltip action label</note>
+      </trans-unit>
+      <trans-unit id="1770355449441392558" datatype="html">
+        <source>Back to the map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <note priority="1" from="description">Label for navigate back button</note>
+      </trans-unit>
+      <trans-unit id="5174359152122758396" datatype="html">
+        <source>Longitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+        <note priority="1" from="description">Longitude label on details page</note>
+      </trans-unit>
+      <trans-unit id="8314090883669143391" datatype="html">
+        <source>Latitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <note priority="1" from="description">Latitude label on details page</note>
+      </trans-unit>
+      <trans-unit id="5241020730740347210" datatype="html">
+        <source>Altitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">39,40</context>
+        </context-group>
+        <note priority="1" from="description">Altitude label on details page</note>
+      </trans-unit>
+      <trans-unit id="3839889055021242710" datatype="html">
+        <source>Location image</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+        <note priority="1" from="description">Alternative message for location image</note>
+      </trans-unit>
+      <trans-unit id="2446847910275609134" datatype="html">
+        <source>Indicators overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/location-details/location-details.page.html</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+        <note priority="1" from="description">Indicators section title</note>
+      </trans-unit>
+      <trans-unit id="2748804051891115106" datatype="html">
+        <source>No data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/map/pages/map-view/map-view.page.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+        <note priority="1" from="description">No data label</note>
+        <note priority="1" from="meaning">score-legend</note>
+      </trans-unit>
+      <trans-unit id="1431090920116921975" datatype="html">
+        <source>Neims Logo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Header logo alternative text</note>
+      </trans-unit>
+      <trans-unit id="7019974958659076171" datatype="html">
+        <source>Logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="meaning">Logout header user-menu action</note>
+      </trans-unit>
+      <trans-unit id="2786446560097805414" datatype="html">
+        <source>English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="meaning">English menu option</note>
+      </trans-unit>
+      <trans-unit id="6309908379619763573" datatype="html">
+        <source>Map</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="meaning">Map header menu option</note>
+      </trans-unit>
+      <trans-unit id="7512004658142697228" datatype="html">
+        <source>Locations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="meaning">Locations header menu option</note>
+      </trans-unit>
+      <trans-unit id="7882405807850768589" datatype="html">
+        <source>An error occurred</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="meaning">Logout error title</note>
+      </trans-unit>
+      <trans-unit id="8544928511320882610" datatype="html">
+        <source>Impossible to logout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="meaning">Logout error message</note>
+      </trans-unit>
+      <trans-unit id="8987929122370217845" datatype="html">
+        <source>Do you want to logout?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/components/header/header.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="meaning">Logout dialog message</note>
+      </trans-unit>
+      <trans-unit id="1884694780839381162" datatype="html">
+        <source>Not found icon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/pages/not-found/not-found.page.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Not found icon alternative text</note>
+      </trans-unit>
+      <trans-unit id="7902872095155677921" datatype="html">
+        <source> The page you are looking for can’t be reached </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/pages/not-found/not-found.page.html</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+        <note priority="1" from="description">Not-found page header</note>
+      </trans-unit>
+      <trans-unit id="8353369521311785333" datatype="html">
+        <source> Please try to reload, check the link in the browser or click one of the menu sections to choose a new direction. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/pages/not-found/not-found.page.html</context>
+          <context context-type="linenumber">12,14</context>
+        </context-group>
+        <note priority="1" from="description">Not-found page text</note>
+      </trans-unit>
+      <trans-unit id="1305357231288135414" datatype="html">
+        <source>Homepage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/pages/not-found/not-found.page.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Homepage action label on not-found page</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,9 @@
+<span
+  class="visibility"
+  [ngClass]="{
+    'visibility-published': visibility === LOCATION_VISIBILITY.Published,
+    'visibility-unpublished': visibility === LOCATION_VISIBILITY.Unpublished
+  }"
+>
+  {{ visibility | translate: 'location-visibility' }}
+</span>

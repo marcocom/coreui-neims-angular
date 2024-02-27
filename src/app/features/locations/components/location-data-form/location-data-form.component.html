@@ -1,0 +1,240 @@
+<ng-container *ngIf="type === 'add'; else editCaption">
+  <h2 class="mt-2 mb-3 px-4" i18n="add-location-form|Page title">
+    Add information
+  </h2>
+
+  <p class="px-4" i18n="add-location-form|Page sub-title">
+    Fill the information below in order to proceed with the creation of a new
+    location
+  </p>
+</ng-container>
+
+<ng-template #editCaption>
+  <h2 class="mt-5 mb-3 px-4" i18n="edit-location-form|Page title">
+    Edit location
+  </h2>
+
+  <p class="px-4" i18n="edit-location-form|Page sub-title">
+    Edit the information below in order to update the location’s information.
+  </p>
+</ng-template>
+
+<div class="separator mt-5 mb-0"></div>
+
+<div class="form-wrapper pt-3">
+  <ng-container *ngIf="type === 'edit'">
+    <h4
+      class="mt-3 mb-4"
+      i18n="add-location-form|Location coordinates section label"
+    >
+      Location coordinates
+    </h4>
+
+    <div class="row my-3">
+      <div class="col-4 d-flex flex-column">
+        <span
+          class="text-xs font-bold mb-1"
+          i18n="add-location-form|Longitude label"
+        >
+          Longitude
+        </span>
+        <span>{{ location?.longitude | number: '2.8' }}</span>
+      </div>
+
+      <div class="col-8 d-flex flex-column">
+        <span
+          class="text-xs font-bold mb-1"
+          i18n="add-location-form|Latitude label"
+        >
+          Latitude
+        </span>
+        <span>{{ location?.latitude | number: '2.8' }}</span>
+      </div>
+    </div>
+
+    <button
+      pButton
+      pRipple
+      type="button"
+      i18n-label="add-location|Label for modify coordinates button"
+      label="Modify"
+      class="p-button-secondary p-button-lg"
+      cdkStepperNext
+      (click)="setLocationMarker(location)"
+    ></button>
+
+    <div class="separator mt-4 mb-5"></div>
+  </ng-container>
+
+  <h4 i18n="add-location-form|Location description section label">
+    Location description
+  </h4>
+  <p class="text-xs" i18n="add-location-form|Location description section text">
+    Insert a name and a short description of the location.
+  </p>
+
+  <form [formGroup]="locationDetailsForm">
+    <label class="label mt-3" i18n="add-location-form|Location altitude label"
+      >Altitude</label
+    >
+    <input
+      formControlName="altitude"
+      class="aqm-input"
+      type="number"
+      [max]="ALTITUDE_LIMIT"
+      [min]="-ALTITUDE_LIMIT"
+      placeholder="Type altitude"
+      i18n-placeholder="add-location-form|Location altitude placeholder"
+    />
+
+    <span
+      *ngIf="altitude?.invalid && (altitude?.dirty || altitude?.touched)"
+      class="aqm-invalid-text"
+    >
+      <span
+        *ngIf="altitude?.errors?.max"
+        i18n="add-location-form|Altitude max limitation error"
+      >
+        Altitude cannot be more than 20km
+      </span>
+      <span
+        *ngIf="altitude?.errors?.min"
+        i18n="add-location-form|Altitude min limitation error"
+      >
+        Altitude cannot be less than -20km
+      </span>
+    </span>
+
+    <label
+      class="label label-required mt-3"
+      i18n="add-location-form|Location name label"
+      >Name</label
+    >
+    <input
+      formControlName="name"
+      class="aqm-input"
+      [class.invalid]="name.invalid && (name.dirty || name.touched)"
+      type="text"
+      placeholder="Type a name"
+      i18n-placeholder="add-location-form|Location name placeholder"
+      [maxlength]="INPUT_MAX_SIZE"
+    />
+
+    <span
+      *ngIf="name.invalid && (name.dirty || name.touched)"
+      class="aqm-invalid-text"
+    >
+      <span
+        *ngIf="name.errors?.required"
+        i18n="add-location-form|Location name required error"
+      >
+        Name is required
+      </span>
+    </span>
+
+    <label
+      class="label mt-3"
+      i18n="add-location-form|Location description label"
+      >Description</label
+    >
+    <div class="aqm-remain-textarea">
+      <textarea
+        formControlName="description"
+        rows="4"
+        placeholder="Write a description"
+        i18n-placeholder="add-location-form|Location description placeholder"
+        [maxlength]="TEXTAREA_MAX_SIZE"
+      ></textarea>
+      <span class="counter">max {{ TEXTAREA_MAX_SIZE }}</span>
+    </div>
+
+    <h6
+      class="label label-required mt-3 mb-3"
+      i18n="add-location-form|Location type section label"
+    >
+      Select the type of location
+    </h6>
+
+    <p-radioButton
+      class="mr-4"
+      styleClass="aqm-radio-regular"
+      label="Indoor"
+      i18n-label="add-location-form|Indoor radio label"
+      name="type"
+      [value]="LOCATION_TYPE.Indoor"
+      formControlName="type"
+    ></p-radioButton>
+    <p-radioButton
+      styleClass="aqm-radio-regular"
+      label="Outdoor"
+      i18n-label="add-location-form|Outdoor radio label"
+      name="type"
+      [value]="LOCATION_TYPE.Outdoor"
+      formControlName="type"
+    ></p-radioButton>
+
+    <div class="separator"></div>
+
+    <h4 i18n="add-location-form|Location upload section label">
+      Location pictures
+    </h4>
+
+    <p class="text-xs" i18n="add-location-form|Location upload section text">
+      Upload up to 10 pictures in png, jpeg or tiff format. The maximum file
+      size is {{ MAX_FILE_SIZE_LABEL }}.
+    </p>
+
+    <aqm-file-uploader
+      class="d-block mt-3"
+      accept="image/png, image/jpeg, image/tiff"
+      [uploadUrl]="uploadUrl"
+      [files]="uploadedPictures"
+      fileIdKey="fileId"
+      fileNameKey="fileName"
+      [maxFileSize]="MAX_FILE_SIZE_VALUE"
+      [minWidth]="400"
+      [minHeight]="200"
+      uploadLabel="Upload pictures"
+      i18n-uploadLabel="add-location-form|Label for upload button"
+      [maxFiles]="10"
+      (fileUploaded)="onFileUploaded($event)"
+      (fileRemoved)="onFileRemoved($event)"
+      (fileUploadError)="onFileUploadError($event)"
+    ></aqm-file-uploader>
+
+    <div class="separator"></div>
+
+    <h4
+      i18n="add-location-form|Location visibility section label"
+      class="label-required"
+    >
+      Location visibility
+    </h4>
+
+    <p
+      class="text-xs mb-4"
+      i18n="add-location-form|Location visibility section text"
+    >
+      You can directly publish the new location or save it and make it private
+      and visible just to admin users.
+    </p>
+
+    <p-radioButton
+      class="mr-3"
+      styleClass="aqm-radio-regular"
+      label="Published"
+      i18n-label="add-location-form|Published radio label"
+      name="visibility"
+      [value]="LOCATION_VISIBILITY.Published"
+      formControlName="visibility"
+    ></p-radioButton>
+    <p-radioButton
+      styleClass="aqm-radio-regular"
+      label="Unpublished"
+      i18n-label="add-location-form|Unpublished radio label"
+      name="visibility"
+      [value]="LOCATION_VISIBILITY.Unpublished"
+      formControlName="visibility"
+    ></p-radioButton>
+  </form>
+</div>

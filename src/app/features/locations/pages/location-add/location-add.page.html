@@ -1,0 +1,40 @@
+<aqm-sidebar>
+  <aqm-location-add
+    [markerAdded]="markerAdded"
+    [location]="locationData"
+    (stepChange)="onSetCurrentStep($event)"
+    (storeLocationData)="onStoreLocationData($event)"
+    (navigateBack)="onNavigateBack()"
+    (addLocation)="onAddLocation()"
+  ></aqm-location-add>
+</aqm-sidebar>
+
+<aqm-container>
+  <aqm-map
+    [class.crosshair-cursor]="addLocationMode"
+    [options]="options"
+    [customControl]="customControl"
+    [displayCustomControl]="true"
+    (mapInitialized)="onMapInitialized()"
+  ></aqm-map>
+</aqm-container>
+
+<button
+  pRipple
+  #customControl
+  id="control-button"
+  class="control-button"
+  [ngClass]="{
+    'visible': currentWizardStep === 1,
+    'active': addLocationMode
+  }"
+  [class.visible]="currentWizardStep === 1"
+  [disabled]="markerAdded"
+  (click)="toggleAddMode($event)"
+>
+  <img
+    src="/assets/icons/add-marker.svg"
+    alt="Add marker"
+    i18n-alt="add-location|Add marker alternative text"
+  />
+</button>

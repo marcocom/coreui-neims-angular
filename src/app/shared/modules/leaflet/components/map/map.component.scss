@@ -1,0 +1,132 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+$control-spacer: rem(24px) !default;
+$control-radius: rem(6px) !default;
+
+$zoom-control-size: rem(40px) !default;
+$zoom-control-color: $gray-500 !default;
+$zoom-control-bg-color: $gray-0 !default;
+$zoom-control-border-color: $gray-200 !default;
+$zoom-control-hover: (
+  'background': $cream,
+  'color': $gray-950,
+) !default;
+
+:host {
+  ::ng-deep {
+    .leaflet-control-zoom {
+      margin-top: $control-spacer;
+      margin-right: $control-spacer;
+      border: 1px solid $zoom-control-border-color;
+      border-radius: $border-radius-normal;
+      overflow: hidden;
+      box-shadow: $box-shadow-2;
+
+      .leaflet-control-zoom-in,
+      .leaflet-control-zoom-out {
+        width: $zoom-control-size;
+        height: $zoom-control-size;
+        line-height: $zoom-control-size;
+        background: $zoom-control-bg-color;
+        color: $zoom-control-color;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover {
+          @include set-props($zoom-control-hover);
+        }
+      }
+
+      .leaflet-control-zoom-in {
+        border-color: $zoom-control-border-color;
+      }
+    }
+
+    .circle-marker {
+      filter: drop-shadow(#{$box-shadow-3});
+      transform-box: fill-box;
+      transform-origin: center;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .leaflet-popup {
+      margin-bottom: rem(40px);
+
+      .leaflet-popup-content-wrapper {
+        padding: 0;
+        border-radius: $control-radius;
+        box-shadow: $box-shadow-2;
+      }
+
+      .leaflet-popup-content {
+        width: rem(336px) !important;
+        margin: 0;
+      }
+
+      .leaflet-popup-close-button {
+        width: rem(24px);
+        height: rem(24px);
+        line-height: rem(20px);
+        top: rem(14px);
+        right: rem(14px);
+        padding: 0;
+        display: block;
+        background: $gray-0;
+        color: $gray-1000;
+        border-radius: 50%;
+        border: 1px solid $gray-1000;
+        font-size: $size-large;
+        font-weight: $weight-normal;
+
+        &:hover {
+          color: $gray-1000;
+        }
+      }
+    }
+
+    .map-legend {
+      margin-bottom: rem(8px); // + watermark space 24 in total
+      margin-right: $control-spacer;
+    }
+
+    // Use pixels to align with the rest of the leaflet styles
+    .custom-marker {
+      &-img {
+        position: absolute;
+        bottom: 6px;
+        left: -6px;
+        width: 24px;
+        height: 36px;
+      }
+
+      &-text {
+        position: absolute;
+        bottom: 25px;
+        left: 22px;
+        font-family: $font-family-base;
+        font-size: $size-small;
+        line-height: 1.2;
+        font-weight: $weight-bold;
+        white-space: nowrap;
+        pointer-events: none;
+      }
+    }
+
+    .leaflet-marker-draggable {
+      cursor: move;
+    }
+  }
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

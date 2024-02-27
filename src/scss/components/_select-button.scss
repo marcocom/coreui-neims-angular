@@ -1,0 +1,16 @@
+$select-button-spacer: rem(4px);
+
+.p-selectbutton.p-buttonset {
+  display: table;
+  background: $gray-0;
+  padding: $select-button-spacer;
+  border-radius: $border-radius-normal;
+
+  .p-button {
+    border-radius: $border-radius-normal;
+
+    &:not(.p-highlight) {
+      @include set-btn-color($btn-color, 'text');
+    }
+  }
+}

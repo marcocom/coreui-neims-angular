@@ -1,0 +1,24 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$chart-bg-color: $gray-0 !default;
+$chart-border-radius: rem(6px) !default;
+
+:host {
+  display: block;
+}
+
+.chart-container {
+  width: 100%;
+  height: 100%;
+  background: $chart-bg-color;
+  border-radius: $chart-border-radius;
+}
+
+.tooltip-wrapper {
+  margin-top: -#{rem(10px)};
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+}

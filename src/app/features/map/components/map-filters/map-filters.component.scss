@@ -1,0 +1,9 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: rem(24px);
+}

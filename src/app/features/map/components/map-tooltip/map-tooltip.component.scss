@@ -1,0 +1,59 @@
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+
+$tooltip-width: rem(336px);
+$tooltip-content-width: rem(304px);
+$tooltip-radius: rem(6px);
+
+.tooltip-container {
+  display: block;
+  border-radius: $tooltip-radius;
+  overflow: hidden;
+  font-family: $font-family-base;
+
+  .content {
+    padding: rem(16px);
+    color: $gray-950;
+  }
+
+  .image {
+    object-fit: cover;
+    width: 100%;
+    height: rem(105px);
+  }
+
+  ::ng-deep {
+    aqm-tab-view-scroller {
+      display: block;
+
+      .p-tabview .p-tabview-panels {
+        padding-bottom: rem(3px);
+        width: $tooltip-content-width;
+      }
+    }
+  }
+
+  .label {
+    font-size: $size-small;
+    line-height: rem(16px);
+    color: $gray-500;
+    margin: rem(9px) 0 rem(16px);
+  }
+
+  .value,
+  .unit {
+    font-family: $font-family-base;
+  }
+
+  .value {
+    margin: rem(16px) 0 rem(20px);
+    font-size: rem(40px);
+    font-weight: $weight-bold;
+    line-height: rem(38px);
+  }
+
+  .unit {
+    font-size: $size-xsmall;
+    font-weight: $weight-normal;
+  }
+}

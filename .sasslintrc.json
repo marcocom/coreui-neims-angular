@@ -1,0 +1,261 @@
+{
+  "files": {
+    "include": "src/**/*.scss"
+  },
+  "options": {
+    "formatter": "stylish",
+    "merge-default-rules": true
+  },
+  "rules": {
+    "attribute-quotes": [
+      2,
+      {
+        "include": true
+      }
+    ],
+    "border-zero": [
+      2,
+      {
+        "convention": "none"
+      }
+    ],
+    "brace-style": [
+      2,
+      {
+        "style": "1tbs",
+        "allow-single-line": false
+      }
+    ],
+    "class-name-format": [
+      2,
+      {
+        "allow-leading-underscore": true,
+        "convention": "hyphenatedbem"
+      }
+    ],
+    "clean-import-paths": [
+      2,
+      {
+        "leading-underscore": false,
+        "filename-extension": false
+      }
+    ],
+    "declarations-before-nesting": [
+      2
+    ],
+    "empty-args": [
+      2,
+      {
+        "include": true
+      }
+    ],
+    "empty-line-between-blocks": [
+      2,
+      {
+        "ignore-single-line-rulesets": true
+      }
+    ],
+    "extends-before-declarations": [
+      2
+    ],
+    "extends-before-mixins": [
+      2
+    ],
+    "final-newline": [
+      2,
+      {
+        "include": true
+      }
+    ],
+    "force-attribute-nesting": [
+      0
+    ],
+    "force-element-nesting": [
+      1
+    ],
+    "force-pseudo-nesting": [
+      0
+    ],
+    "function-name-format": [
+      2,
+      {
+        "allow-leading-underscore": false,
+        "convention": "hyphenatedlowercase"
+      }
+    ],
+    "hex-length": [
+      2,
+      {
+        "style": "long"
+      }
+    ],
+    "hex-notation": [
+      2,
+      {
+        "style": "lowercase"
+      }
+    ],
+    "id-name-format": [
+      0
+    ],
+    "indentation": [
+      2,
+      {
+        "size": 2
+      }
+    ],
+    "leading-zero": [
+      2,
+      {
+        "include": true
+      }
+    ],
+    "max-file-line-count": [
+      1,
+      {
+        "length": 300
+      }
+    ],
+    "max-line-length": [
+      2,
+      {
+        "length": 120
+      }
+    ],
+    "mixin-name-format": [
+      2,
+      {
+        "allow-leading-underscore": false,
+        "convention": "hyphenatedlowercase"
+      }
+    ],
+    "mixins-before-declarations": [
+      2
+    ],
+    "nesting-depth": [
+      2,
+      {
+        "max-depth": 5
+      }
+    ],
+    "no-at-rule-vendor-prefix": [
+      0
+    ],
+    "no-attribute-selectors": [
+      0
+    ],
+    "no-color-hex": [
+      0
+    ],
+    "no-color-keywords": [
+      2
+    ],
+    "no-color-literals": [
+      2
+    ],
+    "no-combinators": [
+      0
+    ],
+    "no-css-comments": [
+      2
+    ],
+    "no-debug": [
+      2
+    ],
+    "no-disallowed-properties": [
+      0
+    ],
+    "no-disallowed-property-values": [
+      0
+    ],
+    "no-duplicate-properties": [
+      2
+    ],
+    "no-empty-rulesets": [
+      1
+    ],
+    "no-extends": [
+      2
+    ],
+    "no-ids": [
+      2
+    ],
+    "no-important": [
+      1
+    ],
+    "no-invalid-hex": [
+      2
+    ],
+    "no-mergeable-selectors": [
+      2
+    ],
+    "no-misspelled-properties": [
+      2
+    ],
+    "no-vendor-prefixes": [
+      0
+    ],
+    "no-qualifying-elements": [
+      2,
+      {
+        "allow-element-with-attribute": true,
+        "allow-element-with-class": false,
+        "allow-element-with-id": false
+      }
+    ],
+    "no-selector-vendor-prefix": [
+      0
+    ],
+    "no-trailing-whitespace": [
+      2
+    ],
+    "no-trailing-zero": [
+      2
+    ],
+    "no-transition-all": [
+      2
+    ],
+    "one-declaration-per-line": [
+      2
+    ],
+    "property-sort-order": [
+      0,
+      {
+        "ignore-custom-properties": true
+      }
+    ],
+    "pseudo-element": [
+      2
+    ],
+    "quotes": [
+      2,
+      {
+        "style": "single"
+      }
+    ],
+    "single-line-per-selector": [
+      1
+    ],
+    "space-after-comma": [
+      2
+    ],
+    "space-after-colon": [
+      2
+    ],
+    "space-before-bang": [
+      2
+    ],
+    "trailing-semicolon": [
+      2,
+      {
+        "include": true
+      }
+    ],
+    "zero-unit": [
+      2,
+      {
+        "include": false
+      }
+    ]
+  }
+}

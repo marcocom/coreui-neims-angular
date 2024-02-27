@@ -1,0 +1,97 @@
+$dialog-width: rem(480px) !default;
+$dialog-spacer: rem(40px) !default;
+$dialog-margin: rem(24px) !default;
+
+$toast-width: rem(274px);
+$toast-top-space: calc(#{$header-height} + #{rem(4px)});
+
+.p-dialog-mask.p-component-overlay.p-dialog-mask-scrollblocker {
+  background: $overlay-background;
+}
+
+.p-dialog.p-confirm-dialog {
+  width: $dialog-width;
+  padding: $dialog-spacer;
+  background: $cream;
+
+  .p-dialog-header {
+    .p-dialog-title {
+      font-size: $size-xxlarge;
+      font-weight: $weight-bold;
+      line-height: rem(32px);
+    }
+
+    .p-dialog-header-icons {
+      position: absolute;
+      right: 0;
+      top: rem(-26px);
+
+      .p-dialog-header-icon.p-dialog-header-close {
+        color: $gray-0;
+        font-size: $size-small;
+      }
+    }
+  }
+
+  .p-dialog-content {
+    .p-confirm-dialog-message:not(:empty) {
+      margin-top: $dialog-margin;
+      line-height: rem(20px);
+    }
+  }
+
+  .p-dialog-footer {
+    margin-top: $dialog-spacer;
+    text-align: end;
+
+    .p-confirm-dialog-accept,
+    .p-confirm-dialog-reject {
+      @include set-btn-size($btn-size, 'lg');
+    }
+
+    .p-confirm-dialog-accept {
+      margin-left: $dialog-margin;
+    }
+
+    .p-confirm-dialog-reject {
+      @include set-btn-color($btn-color, 'secondary');
+    }
+
+    .p-button-icon.p-button-icon-left {
+      margin-right: 0;
+    }
+  }
+}
+
+p-toastitem {
+  .p-toast-message {
+    margin: $dialog-margin rem(-4px) rem(-10px) 0;
+    padding: 0 rem(4px) rem(10px) 0;
+  }
+
+  &:first-child {
+    .p-toast-message {
+      margin-top: $toast-top-space;
+    }
+  }
+
+  .p-toast-message-content {
+    width: $toast-width;
+    margin-right: rem(4px);
+    margin-left: auto;
+    padding: $dialog-margin;
+    border-radius: rem(4px);
+    background: $gray-0;
+    box-shadow: $box-shadow-2;
+
+    .p-toast-summary {
+      font-weight: $weight-bold;
+      line-height: rem(20px);
+    }
+
+    .p-toast-detail {
+      margin-top: rem(16px);
+      font-size: $size-small;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<ng-container [ngTemplateOutlet]="headerTemplate"></ng-container>
+
+<div [ngTemplateOutlet]="selected ? selected.content : null"></div>
+
+<footer *ngIf="displayFooter">
+  <ng-content></ng-content>
+</footer>

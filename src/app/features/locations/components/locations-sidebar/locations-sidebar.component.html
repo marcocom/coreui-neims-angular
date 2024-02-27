@@ -1,0 +1,21 @@
+<ng-container [ngSwitch]="viewType$ | async">
+  <aqm-location-list
+    *ngSwitchCase="'list'"
+    [locations]="locations$ | async"
+    [defaultFilters]="selectedFilters$ | async"
+    [loading]="loading$ | async"
+    (locationClick)="onLocationClick($event)"
+    (locationMouseEnter)="onLocationMouseEnter($event)"
+    (locationMouseLeave)="onLocationMouseLeave($event)"
+    (addLocationNavigate)="onAddLocationNavigate()"
+    (filtersChange)="onLocationsFiltersChange($event)"
+  ></aqm-location-list>
+
+  <aqm-location-details
+    *ngSwitchCase="'details'"
+    [location]="selectedLocation$ | async"
+    (navigateBack)="closeLocationDetails()"
+    (editLocation)="onEditLocation($event)"
+    (deleteLocation)="onDeleteLocation($event)"
+  ></aqm-location-details>
+</ng-container>
